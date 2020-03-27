@@ -59,7 +59,7 @@
           <div class="product-info__wrapper">
             <b class="product-info__name">Зайчик-попрыгайчик</b>
             <p class="product-info__params">Рост 30 см, вес 200 г</p>
-            <button class="product-info__button">1200 руб.</p>
+            <button class="product-info__button">1200 руб.</button>
           </div>
         </li>
         <li class="catalog__item product-info">
@@ -68,7 +68,7 @@
           <div class="product-info__wrapper">
             <b class="product-info__name">Корзинка для белья</b>
             <p class="product-info__params">Диаметр 15 см, высота 10 см</p>
-            <button class="product-info__button">690 руб.</p>
+            <button class="product-info__button">690 руб.</button>
           </div>
         </li>
         <li class="catalog__item product-info">
@@ -77,34 +77,33 @@
           <div class="product-info__wrapper">
             <b class="product-info__name">Большая корзинка для игрушек</b>
             <p class="product-info__params">Диаметр 30 см, высота 30 см</p>
-            <button class="product-info__button">1500 руб.</p>
+            <button class="product-info__button">1500 руб.</button>
           </div>
         </li>
       </ul>
     </section>
 
-    <section class="production"></section>
-
     <section class="popup" style="display: none;">
+      <h2 class="visually-hidden">Выбрать размер</h2>
       <div class="popup__wrapper">
-        <form class="popup__form form" method="post" action="">
+        <form class="popup__form form" method="post" action="https://echo.htmlacademy.ru">
           <b class="form__hedaer ">Добавить в корзину</b>
           <p class="form__choose-size">Выбирите размер:</p>
           <ul class="form__list">
-            <li class="form__item ">
+            <li class="form__item">
               <input class="form__input" id="S-size" type="radio" name="size" value="S-size" checked>
               <label class="form__lable" for="S-size">S</label>
             </li>
-            <li class="form__item ">
+            <li class="form__item">
               <input class="form__input" id="M-size" type="radio" name="size" value="M-size">
               <label class="form__lable" for="M-size">M</label>
             </li>
-            <li class="form__item ">
+            <li class="form__item">
               <input class="form__input" id="L-size" type="radio" name="size" value="L-size">
               <label class="form__lable" for="L-size">L</label>
             </li>
           </ul>
-          <button type="submit">Добавить</button>
+          <button class="form__submit" type="submit">Добавить</button>
         </form>
       </div>
     </section>
@@ -114,7 +113,7 @@
   <footer class="page-footer">
     <div class="page-footer__wrapper">
       <div class="page-footer__social social">
-        <u class="social_list">
+        <ul class="social_list">
           <li class="social__item">
             <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в
               Инстаграме</a>
