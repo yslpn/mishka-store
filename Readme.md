@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Yaroslav Slepukhin](https://up.htmlacademy.ru/adaptive/19/user/429237).
-* Наставник: [Станислав Кузнецов](https://up.htmlacademy.ru/adaptive/19/user/237925).
+* Студент: [Yaroslav Slepukhin](https://htmlacademy.ru/profile/id429237).
+* Наставник: [Станислав Кузнецов](https://htmlacademy.ru/profile/id237925).
 
 ---
 

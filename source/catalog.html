@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Каталог товаров в «Мишка»</title>
+</head>
+
+<body>
+
+  <header class="page-header">
+    <a href="./index.html" class="page-header__logo">
+      <img src="https://via.placeholder.com/86x35" alt="Логотип «Мишка»" class="page-header__logo-image"
+        width="86" height="35">
+    </a>
+    <nav class="page-header__nav main-nav">
+      <button class="main-nav__toggle">Открыть меню</button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list--primary-link">
+            <a href="./catalog.html">Каталог товаров</a>
+          </li>
+          <li class="site-list__item site-list--primary-link">
+            <a href="./form.html">Вязание на заказ</a>
+          </li>
+          <li class="site-list__item site-list--secondary-link">
+            <a href="#">Новые поступления</a>
+          </li>
+          <li class="site-list__item site-list--secondary-link">
+            <a href="#">Распродажа</a>
+          </li>
+        </ul>
+        <ul class="main-nav__list user-list">
+          <li class="user-list__item">
+            <button class="user-list__button user-list__button--search">Поиск по сайту</button>
+          </li>
+          <li class="user-list__item">
+            <button class="user-list__button user-list__button--cart">Корзина: пока пуста</button>
+          </li>
+          <li class="user-list__item ">
+            <p class="user-list__info"><small>Бесплатная доставка по России</small></p>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <section class="catalog">
+      <h1 class="catalog__header">Каталог товаров</h1>
+      <article class="product">
+        <img class="product__image" src="https://via.placeholder.com/260x195" alt="Кукла зайчик"
+          width="260" height="195">
+        <div class="product__wrapper">
+          <h4 class="product__name">Зайчик-попрыгайчик</h4>
+          <p class="product__params">Рост 30 см, вес 200 г</p>
+          <p class="product__buy">
+            <span class="product__price">1200 руб.</span>
+            <a class="product__link" href="#"></a>
+          </p>
+        </div>
+      </article>
+      <article class="product">
+        <img class="product__image" src="https://via.placeholder.com/260x195" alt="Корзина со сложенным бельём"
+          width="260" height="195">
+        <div class="product__wrapper">
+          <h4 class="product__name">Корзинка для белья</h4>
+          <p class="product__params">Диаметр 15 см, высота 10 см</p>
+          <p class="product__buy">
+            <span class="product__price">690 руб.</span>
+            <a class="product__link" href="#"></a>
+          </p>
+        </div>
+      </article>
+      <article class="product">
+        <img class="product__image" src="https://via.placeholder.com/260x195" alt="Корзина с игрушками"
+          width="260" height="195">
+        <div class="product__wrapper">
+          <h4 class="product__name">Большая корзинка для игрушек</h4>
+          <p class="product__params">Диаметр 30 см, высота 30 см</p>
+          <p class="product__buy">
+            <span class="product__price">1500 руб.</span>
+            <a class="product__link" href="#"></a>
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <section class="popup" style="display: none;">
+      <div class="popup__wrapper">
+        <form class="popup__form form" method="post" action="https://echo.htmlacademy.ru">
+          <h2 class="form__hedaer ">Добавить в корзину</h2>
+          <p class="form__choose-size">Выбирите размер:</p>
+          <ul class="form__list">
+            <li class="form__item">
+              <input class="form__input" id="S-size" type="radio" name="size" value="S-size" checked>
+              <label class="form__lable" for="S-size">S</label>
+            </li>
+            <li class="form__item">
+              <input class="form__input" id="M-size" type="radio" name="size" value="M-size">
+              <label class="form__lable" for="M-size">M</label>
+            </li>
+            <li class="form__item">
+              <input class="form__input" id="L-size" type="radio" name="size" value="L-size">
+              <label class="form__lable" for="L-size">L</label>
+            </li>
+          </ul>
+          <button class="form__submit" type="submit">Добавить</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <div class="page-footer__social social">
+        <ul class="social_list">
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy">Мы в Твиттере</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <p class="copyright__text">Разработано</p>
+        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <img src="https://via.placeholder.com/27x34" alt="HTML Academy" width="27" height="34">
+        </a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
