@@ -11,8 +11,8 @@
 
   <header class="page-header">
     <a href="./index.html" class="page-header__logo">
-      <img src="https://via.placeholder.com/86x35" alt="Логотип «Мишка»" class="page-header__logo-image"
-        width="86" height="35">
+      <img src="https://via.placeholder.com/86x35" alt="Логотип «Мишка»" class="page-header__logo-image" width="86"
+        height="35">
     </a>
     <nav class="page-header__nav main-nav">
       <button class="main-nav__toggle">Открыть меню</button>
@@ -67,19 +67,20 @@
         <h2 class="best-product__header">Товар недели</h2>
         <div class="best-product__info info">
           <p class="info__name">Вязанные корзинки</p>
-          <p class="info__description">Экологически чистая пряжа, ручная работа. Достпуны в шести рассцветкахб и трех размерах.</p>
-          <table class="info__table table">
-            <tr class="table__column">
-              <td class="table__row">Цвет:</td>
-              <td class="table__row">«Тиффани»/серый</td>
+          <p class="info__description">Экологически чистая пряжа, ручная работа. Достпуны в шести рассцветкахб и трех
+            размерах.</p>
+          <table class="info__table">
+            <tr class="info__table-row">
+              <td class="info__table-column">Цвет:</td>
+              <td class="info__table-column">«Тиффани»/серый</td>
             </tr>
-            <tr class="table__column">
-              <td class="table__row">Диаметр:</td>
-              <td class="table__row">25 см</td>
+            <tr class="info__table-row">
+              <td class="info__table-column">Диаметр:</td>
+              <td class="info__table-column">25 см</td>
             </tr>
-            <tr class="table__column">
-              <td class="table__row">Высота:</td>
-              <td class="table__row">15 см</td>
+            <tr class="info__table-row">
+              <td class="info__table-column">Высота:</td>
+              <td class="info__table-column">15 см</td>
             </tr>
           </table>
           <img class="info__image" src="https://via.placeholder.com/260x315"
@@ -95,14 +96,63 @@
     <section class="about-us">
       <div class="about-us__wrapper">
         <h2 class="about-us__header">Коротко о нас:</h2>
-        <ul class="about-us_list">
-          <li class="about-us_item about-us_item--flower">Экологическии чистые материалы</li>
-          <li class="about-us_item about-us_item---money">Скандинавский стиль по российской цене</li>
-          <li class="about-us_item about-us_item--heart">Увеличивает лайки на фотографиях</li>
-          <li class="about-us_item about-us_item--clew">Связано вручную с любовью и умилением</li>
-          <li class="about-us_item about-us_item--rocket">Поддержка отечественного производителя</li>
-          <li class="about-us_item about-us_item--gift">Поставляется в подарочной упаковке</li>
+        <ul class="about-us__list">
+          <li class="about-us__item about-us__item--flower">Экологическии чистые материалы</li>
+          <li class="about-us__item about-us__item---money">Скандинавский стиль по российской цене</li>
+          <li class="about-us__item about-us__item--heart">Увеличивает лайки на фотографиях</li>
+          <li class="about-us__item about-us__item--clew">Связано вручную с любовью и умилением</li>
+          <li class="about-us__item about-us__item--rocket">Поддержка отечественного производителя</li>
+          <li class="about-us__item about-us__item--gift">Поставляется в подарочной упаковке</li>
         </ul>
+      </div>
+    </section>
+
+    <section class="reviews">
+      <div class="reviews__wrapper slider">
+        <h2 class="reviews__header">Отзывы</h2>
+        <div class="reviews__list  slider__list">
+          <blockquote class="reviews__item slider__item">
+            <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества
+              лайков,как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои
+              фотографии
+              сразу стали более стильными, а также набирают больше лайков!</p>
+            <cite class="reviews__author">Анастасия Красильникова</cite>
+            <span class="reviews__username">@misssssiskras</span>
+          </blockquote>
+          <blockquote class="reviews__item slider__item">
+            <p class="reviews__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus architecto sequi
+              animi nulla deleniti ratione perspiciatis, sit velit quo quaerat vitae blanditiis repellat voluptatibus
+              accusantium temporibus iusto reprehenderit. Officiis, pariatur.</p>
+            <cite class="reviews__author">Accusamus Architecto</cite>
+            <span class="reviews__username">@officiis</span>
+          </blockquote>
+          <blockquote class="reviews__item slider__item">
+            <p class="reviews__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum rerum et illum quam,
+              modi eaque accusamus deserunt eius voluptas nostrum nobis neque sequi, saepe beatae ducimus optio. Iure,
+              laboriosam culpa.</p>
+            <cite class="reviews__author">Lorem ipsum dolor</cite>
+            <span class="reviews__username">@voluptas</span>
+          </blockquote>
+        </div>
+        <button class="reviews__prev">Предыдущий отзыв</button>
+        <button class="reviews__next">Следующий отзыв</button>
+      </div>
+      <a class="reviews__right-review" href="#">Написать</a>
+    </section>
+
+    <section class="contacts">
+      <div class="contacts__wrapper">
+        <h2 class="contacts__header">Контакты</h2>
+        <div class="contacts__email">
+          <p class="contacts__email-title">e-mail:</p>
+          <a class="contacts__email-value" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+        </div>
+        <div class="contacts__adress">
+          <p class="contacts__email-title">адрес:</p>
+          <p class="contacts__email-value">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</p>
+        </div>
+        <div class="contacts__map"></div>
+        <a class="contacts__write-to-us" href="#">Напишите нам</a>
       </div>
     </section>
 
@@ -111,9 +161,10 @@
   <footer class="page-footer">
     <div class="page-footer__wrapper">
       <div class="page-footer__social social">
-        <ul class="social_list">
+        <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в
+              Инстаграме</a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
