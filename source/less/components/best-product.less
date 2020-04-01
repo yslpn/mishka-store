@@ -1,0 +1,39 @@
+.best-product {
+  background-color: hsl(0, 0%, 100%);
+  margin: 0;
+  padding: 34px 30px 36px 30px;
+  border: 1px solid red;
+}
+
+.best-product__purchase {
+  font-size: 17px;
+  font-weight: bold;
+  text-align: center;
+  color: hsl(0, 0%, 27%);
+}
+
+.best-product__price {
+  line-height: 1.41;
+}
+
+.best-product__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 52px;
+  text-decoration: none;
+  border: solid 2px hsl(0, 0%, 27%);
+  line-height: 1.18;
+  color: hsl(0, 0%, 27%);
+  text-transform: uppercase;
+
+  &:hover {
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(0, 0%, 27%);
+  }
+
+  &:active {
+    color: hsla(0, 0%, 100%, 0.3);
+    background-color: hsl(0, 0%, 27%);
+  }
+}

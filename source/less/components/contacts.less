@@ -1,0 +1,58 @@
+.contacts {
+  background-color: hsl(0, 0%, 100%);
+  border: 1px solid red;
+  padding: 40px 30px;
+}
+
+.contacts__wrapper {
+  background-color: hsl(0, 0%, 100%);
+  border: 1px solid red;
+}
+
+.contacts__header {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.67;
+  text-align: left;
+  color: hsl(0, 0%, 0%);
+}
+
+.contacts__address,
+.contacts__email {
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 2;
+  text-align: left;
+  color: hsl(0, 0%, 27%);
+}
+
+.contacts__write-to-us {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 52px;
+  font-family: "Open Sans", sans-serif;
+  border: solid 2px hsl(0, 0%, 27%);
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.18;
+  text-align: center;
+  color: hsl(0, 0%, 27%);
+  text-transform: uppercase;
+  text-decoration: none;
+
+  &:hover {
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(0, 0%, 27%);
+  }
+
+  &:active {
+    color: hsla(0, 0%, 100%, 0.3);
+    background-color: hsl(0, 0%, 27%);
+  }
+}
+
+.contacts__map {
+  height: auto;
+  width: 100%;
+}

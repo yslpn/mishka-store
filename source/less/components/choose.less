@@ -1,0 +1,57 @@
+.choose {
+  margin: 0px;
+  padding: 0px;
+  border: 1px solid red;
+  position: relative;
+}
+
+.choose__bg-image {
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+.choose__header {
+  font-size: 27px;
+  font-weight: bold;
+  line-height: 1.11;
+  text-align: center;
+  color: hsl(0, 100%, 0%);
+  margin: 76px 39px 120px 39px;
+}
+
+.choose__link {
+  display: block;
+  margin: 0px;
+  padding: 30px;
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 1.26;
+  text-align: left;
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+
+  &:active {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.5;
+    color: hsla(0, 0%, 100%, 0.3);
+  }
+}
+
+.choose__link--interior {
+  background-color: hsl(168, 54%, 60%);
+
+  &:hover {
+    background-color: hsl(168, 60%, 59%);
+  }
+}
+
+.choose__link--toys {
+  background-color: hsl(171, 48%, 55%);
+
+  &:hover {
+    background-color: hsl(171, 50%, 52%);
+  }
+}

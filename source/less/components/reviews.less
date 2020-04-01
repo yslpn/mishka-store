@@ -1,0 +1,50 @@
+.reviews {
+  background-color: hsl(0, 0%, 100%);
+  border: 1px solid red;
+  padding: 40px 30px;
+}
+
+.reviews__header {
+  padding: 0px;
+  margin: 0px;
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: left;
+  color: hsl(0, 0%, 0%);
+}
+
+.reviews__item {
+  padding: 0px;
+  margin: 0px;
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 2;
+  text-align: left;
+  color: hsl(0, 0%, 27%);
+}
+
+.reviews__send-review {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 52px;
+  border: solid 2px hsl(0, 0%, 27%);
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.18;
+  text-align: center;
+  color: hsl(0, 0%, 27%);
+  text-transform: uppercase;
+  text-decoration: none;
+
+  &:hover {
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(0, 0%, 27%);
+  }
+
+  &:active {
+    color: hsla(0, 0%, 100%, 0.3);
+    background-color: hsl(0, 0%, 27%);
+  }
+}

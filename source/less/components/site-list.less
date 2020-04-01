@@ -1,0 +1,27 @@
+.site-list {
+  background-color: hsl(0, 0%, 100%);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 1px solid red;
+}
+
+.site-list__link {
+  display: flex;
+  align-items: center;
+  padding-left: 76px;
+  height: 79px;
+  color: hsl(0, 0%, 0%);
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.41;
+  text-align: left;
+  text-decoration: none;
+
+  &:hover {
+    color: hsla(0, 0%, 0%, 0.6);
+  }
+  &:active {
+    color: hsla(0, 0%, 0%, 0.3);
+  }
+}
