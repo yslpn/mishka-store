@@ -5,44 +5,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>«Мишка»</title>
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
 
   <header class="page-header">
     <a href="./index.html" class="page-header__logo">
-      <img src="https://via.placeholder.com/86x35" alt="Логотип «Мишка»" class="page-header__logo-image" width="86"
-        height="35">
+      <img src="./img/logo-mobile.svg" alt="Логотип «Мишка»" class="page-header__logo-image" width="86" height="35">
     </a>
     <nav class="page-header__nav main-nav">
       <button class="main-nav__toggle">Открыть меню</button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list--primary-link">
-            <a href="./catalog.html">Каталог товаров</a>
-          </li>
-          <li class="site-list__item site-list--primary-link">
-            <a href="./form.html">Вязание на заказ</a>
-          </li>
-          <li class="site-list__item site-list--secondary-link">
-            <a href="#">Новые поступления</a>
-          </li>
-          <li class="site-list__item site-list--secondary-link">
-            <a href="#">Распродажа</a>
-          </li>
-        </ul>
-        <ul class="main-nav__list user-list">
-          <li class="user-list__item">
-            <button class="user-list__button user-list__button--search">Поиск по сайту</button>
-          </li>
-          <li class="user-list__item">
-            <button class="user-list__button user-list__button--cart">Корзина: пока пуста</button>
-          </li>
-          <li class="user-list__item ">
-            <p class="user-list__info"><small>Бесплатная доставка по России</small></p>
-          </li>
-        </ul>
-      </div>
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a class="main-nav__link main-nav__link--primary" href="./catalog.html">Каталог товаров</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link main-nav__link--primary" href="./form.html">Вязание на заказ</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link main-nav__link--search" href="#">Поиск по сайту</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link main-nav__link--cart" href="#">Корзина: пока пуста</a>
+        </li>
+      </ul>
     </nav>
   </header>
 
@@ -52,20 +39,21 @@
 
     <section class="choose">
       <div class="choose__wrapper">
-        <img class="choose__bg-image" src="https://via.placeholder.com/575x373" alt="Игрушки и предметы интерьера"
-          width="575" height="373">
+        <img class="choose__bg-image" src="./img/hero-mobile@1x.jpg" alt="Игрушки и предметы интерьера" width="322"
+          height="373">
+
         <h2 class="choose__header">Милые штуки ручной работы для дома</h2>
-        <div class="choose__options options">
-          <a class="options__link options__link--interior" href="#">Предметы интерьера</a>
-          <a class="options__link options__link--toys" href="#">Детские игрушки</a>
+        <div class="choose__options">
+          <a class="choose__link choose__link--interior" href="#">Предметы интерьера</a>
+          <a class="choose__link choose__link--toys" href="#">Детские игрушки</a>
         </div>
       </div>
     </section>
 
     <section class="best-product">
       <div class="best-product__wrapper">
-        <h2 class="best-product__header">Товар недели</h2>
         <div class="best-product__info info">
+          <h2 class="info__header">Товар недели</h2>
           <p class="info__name">Вязанные корзинки</p>
           <p class="info__description">Экологически чистая пряжа, ручная работа. Достпуны в шести рассцветкахб и трех
             размерах.</p>
@@ -83,7 +71,7 @@
               <td class="info__table-column">15 см</td>
             </tr>
           </table>
-          <img class="info__image" src="https://via.placeholder.com/260x315"
+          <img class="info__image" src="./img/triple-set-mobile@1x.jpg"
             alt="Вязанные корзинки в нескольких цветах и размерах." width="260" height="315">
         </div>
         <div class="best-product__purchase">
@@ -134,10 +122,12 @@
             <span class="reviews__username">@voluptas</span>
           </blockquote>
         </div>
-        <button class="reviews__prev">Предыдущий отзыв</button>
-        <button class="reviews__next">Следующий отзыв</button>
+        <div class="reviews__buttons">
+          <button class="reviews__prev">Предыдущий отзыв</button>
+          <button class="reviews__next">Следующий отзыв</button>
+        </div>
       </div>
-      <a class="reviews__right-review" href="#">Написать</a>
+      <a class="reviews__send-review" href="#">Написать</a>
     </section>
 
     <section class="contacts">
@@ -147,11 +137,11 @@
           <p class="contacts__email-title">e-mail:</p>
           <a class="contacts__email-value" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
         </div>
-        <div class="contacts__adress">
+        <div class="contacts__address">
           <p class="contacts__email-title">адрес:</p>
           <p class="contacts__email-value">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</p>
         </div>
-        <div class="contacts__map"></div>
+        <img class="contacts__map" src="./img/map-mobile@1x.jpg" alt="Карта." width="322" height="457">
         <a class="contacts__write-to-us" href="#">Напишите нам</a>
       </div>
     </section>
@@ -163,21 +153,26 @@
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в
-              Инстаграме</a>
+            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">
+              <img src="./img/icon-insta.svg" alt="instagram" width="22" height="21">
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
+              <img src="./img/icon-fb.svg" alt="facebook" width="15" height="28">
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy">Мы в Твиттере</a>
+            <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy">
+              <img src="./img/icon-twitter.svg" alt="twitter" width="23" height="20">
+            </a>
           </li>
         </ul>
       </div>
       <div class="page-footer__copyright copyright">
         <p class="copyright__text">Разработано</p>
         <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img src="https://via.placeholder.com/27x34" alt="HTML Academy" width="27" height="34">
+          <img src="./img/logo-htmlacademy.svg" alt="HTML Academy" width="27" height="34">
         </a>
       </div>
     </div>

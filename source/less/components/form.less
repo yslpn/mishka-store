@@ -1,0 +1,27 @@
+.form {
+  background-color: @white;
+  border: 1px solid red;
+}
+
+.form__submit {
+  height: 52px;
+  border: solid 2px @grey-dark;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.18;
+  text-align: center;
+  color: @grey-dark;
+  background-color: @white;
+  text-transform: uppercase;
+
+  &:hover {
+    color: @white;
+    background-color: @grey-dark;
+  }
+
+  &:active {
+    opacity: 0.3;
+    color: @grey-dark;
+    background-color: @grey-dark;
+  }
+}

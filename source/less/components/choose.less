@@ -1,0 +1,58 @@
+.choose {
+  margin: 0;
+  padding: 0;
+  border: 1px solid red;
+  position: relative;
+}
+
+.choose__bg-image {
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+}
+
+.choose__header {
+  font-size: 27px;
+  font-weight: bold;
+  line-height: 1.11;
+  text-align: center;
+  color: @black;
+  margin: 76px 39px 120px 39px;
+}
+
+.choose__link {
+  display: block;
+  margin: 0;
+  padding: 30px;
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 1.26;
+  text-align: left;
+  color: @white;
+  text-decoration: none;
+
+  &:active {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.5;
+    color: hsla(0, 0%, 100%, 0.3);
+  }
+
+  &--interior {
+    background-color: @green;
+
+    &:hover {
+      background-color: hsl(168, 60%, 59%);
+    }
+  }
+
+  &--toys {
+    background-color: hsl(171, 48%, 55%);
+
+    &:hover {
+      background-color: hsl(171, 50%, 52%);
+    }
+  }
+}
