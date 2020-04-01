@@ -1,5 +1,5 @@
 .best-product {
-  background-color: hsl(0, 0%, 100%);
+  background-color: @white;
   margin: 0;
   padding: 34px 30 36px 30;
   border: 1px solid red;
@@ -9,7 +9,7 @@
   font-size: 17px;
   font-weight: bold;
   text-align: center;
-  color: hsl(0, 0%, 27%);
+  color: @grey-dark;
 }
 
 .best-product__price {
@@ -22,18 +22,19 @@
   align-items: center;
   height: 52px;
   text-decoration: none;
-  border: solid 2px hsl(0, 0%, 27%);
+  border: solid 2px @grey-dark;
   line-height: 1.18;
-  color: hsl(0, 0%, 27%);
+  color: @grey-dark;
   text-transform: uppercase;
 
   &:hover {
-    color: hsl(0, 0%, 100%);
-    background-color: hsl(0, 0%, 27%);
+    color: @white;
+    background-color: @grey-dark;
   }
 
   &:active {
-    color: hsla(0, 0%, 100%, 0.3);
-    background-color: hsl(0, 0%, 27%);
+    opacity: 0.3;
+    color: @grey-dark;
+    background-color: @grey-dark;
   }
 }

@@ -1,11 +1,11 @@
 .contacts {
-  background-color: hsl(0, 0%, 100%);
+  background-color: @white;
   border: 1px solid red;
   padding: 40 30;
 }
 
 .contacts__wrapper {
-  background-color: hsl(0, 0%, 100%);
+  background-color: @white;
   border: 1px solid red;
 }
 
@@ -14,7 +14,7 @@
   font-weight: bold;
   line-height: 1.67;
   text-align: left;
-  color: hsl(0, 0%, 0%);
+  color: @black;
 }
 
 .contacts__address,
@@ -23,7 +23,7 @@
   font-weight: normal;
   line-height: 2;
   text-align: left;
-  color: hsl(0, 0%, 27%);
+  color: @grey-dark;
 }
 
 .contacts__write-to-us {
@@ -31,24 +31,24 @@
   justify-content: center;
   align-items: center;
   height: 52px;
-  font-family: "Open Sans", sans-serif;
-  border: solid 2px hsl(0, 0%, 27%);
+  border: solid 2px @grey-dark;
   font-size: 17px;
   font-weight: bold;
   line-height: 1.18;
   text-align: center;
-  color: hsl(0, 0%, 27%);
+  color: @grey-dark;
   text-transform: uppercase;
   text-decoration: none;
 
   &:hover {
-    color: hsl(0, 0%, 100%);
-    background-color: hsl(0, 0%, 27%);
+    color: @white;
+    background-color: @grey-dark;
   }
 
   &:active {
-    color: hsla(0, 0%, 100%, 0.3);
-    background-color: hsl(0, 0%, 27%);
+    opacity: 0.3;
+    color: @grey-dark;
+    background-color: @grey-dark;
   }
 }
 
