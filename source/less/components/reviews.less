@@ -1,7 +1,5 @@
 .reviews {
   background-color: @white;
-  border: 1px solid red;
-  padding: 40px 30px;
 }
 
 .reviews__header {
@@ -21,6 +19,20 @@
   font-weight: normal;
   line-height: 2;
   text-align: left;
+  color: @grey-dark;
+}
+
+.reviews__author {
+  font-size: 17px;
+  font-weight: bold;
+  font-style: normal;
+  line-height: 1.41;
+  text-align: left;
+  color: @black;
+}
+
+.reviews__username {
+  line-height: 1.76;
   color: @grey-dark;
 }
 
@@ -44,8 +56,7 @@
   }
 
   &:active {
-    opacity: 0.3;
-    color: @grey-dark;
+    color: @white-30;
     background-color: @grey-dark;
   }
 }
