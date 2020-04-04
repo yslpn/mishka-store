@@ -1,6 +1,27 @@
 .form {
   background-color: @white;
-  border: 1px solid red;
+}
+
+.form__description {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.85;
+  text-align: left;
+  color: @grey-dark;
+}
+
+.form__item {
+  padding-bottom: 30px;
+  border: none;
+  border-top: 2px solid @green;
+}
+
+.form__info {
+  display: block;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: left;
+  color: @grey-dark;
 }
 
 .form__submit {
@@ -20,8 +41,7 @@
   }
 
   &:active {
-    opacity: 0.3;
-    color: @grey-dark;
+    color: @white-30;
     background-color: @grey-dark;
   }
 }
