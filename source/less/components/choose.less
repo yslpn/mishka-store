@@ -1,7 +1,4 @@
 .choose {
-  margin: 0;
-  padding: 0;
-  border: 1px solid red;
   position: relative;
 }
 
@@ -9,6 +6,7 @@
   object-fit: cover;
   position: absolute;
   top: 0;
+  left: 0;
   z-index: -1;
   width: 100%;
 }
@@ -19,7 +17,8 @@
   line-height: 1.11;
   text-align: center;
   color: @black;
-  margin: 76px 39px 120px 39px;
+  margin: 0;
+  padding: 76px 0 120px 0;
 }
 
 .choose__link {
@@ -32,6 +31,7 @@
   text-align: left;
   color: @white;
   text-decoration: none;
+  height: 103px;
 
   &:active {
     font-size: 20px;
