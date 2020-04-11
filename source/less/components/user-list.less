@@ -1,0 +1,149 @@
+.user-list {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+  height: 100%;
+  order: 3;
+
+  @media @tablet {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    flex-basis: 348px;
+    order: 1;
+  }
+
+  @media @desktop {
+    margin-left: 70px;
+  }
+}
+
+.user-list__user-item {
+  text-align: left;
+  border-top: 1px solid #ececec;
+  order: 3;
+  position: relative;
+
+  &:hover {
+    & .user-list__link {
+      opacity: 0.6;
+    }
+
+    & svg {
+      opacity: 1;
+    }
+
+    & svg path {
+      fill: @green;
+    }
+  }
+
+  &:active {
+    & .user-list__link {
+      opacity: 0.3;
+    }
+
+    & svg {
+      opacity: 0.3;
+    }
+
+    & svg path {
+      fill: @green;
+    }
+  }
+
+  @media @tablet {
+    border-top: none;
+    height: 88px;
+  }
+}
+
+.user-list__link {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 76px;
+  align-items: center;
+  width: 320px;
+  height: 79px;
+  color: @black;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.41;
+  text-align: left;
+  text-decoration: none;
+
+  @media @tablet {
+    height: 100%;
+    justify-content: flex-end;
+  }
+}
+
+.user-list__info {
+  text-decoration: none;
+}
+
+.user-list__user-item svg {
+  position: absolute;
+  left: 35px;
+  top: calc(50% - 8px);
+  opacity: 0.2;
+
+  @media @tablet {
+    margin: auto 0;
+  }
+}
+
+.user-list__link--search {
+  @media @tablet {
+    width: 82px;
+    font-size: 0;
+    border-left: 1px solid #ececec;
+    border-right: 1px solid #ececec;
+  }
+}
+
+.user-list__link--cart {
+  @media @tablet {
+    text-align: right;
+    padding-left: 0;
+    width: 266px;
+    margin: 0;
+    margin-left: auto;
+  }
+}
+
+.user-list__link--post {
+  @media @tablet {
+    display: block;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 1.6;
+    text-align: right;
+    color: @black;
+  }
+}
+
+.user-list__user-item--secondary {
+  display: none;
+  text-decoration: none;
+
+  &:hover {
+    & .user-list__link {
+      opacity: 1;
+      cursor: default;
+    }
+  }
+
+  &:active {
+    & .user-list__link {
+      opacity: 1;
+    }
+  }
+
+  @media @tablet {
+    display: block;
+    margin-left: auto;
+  }
+}
