@@ -113,11 +113,12 @@
     <section class="best-product">
       <div class="container best-product__wrapper">
         <div class="best-product__info">
-          <h2 class="best-product__header">Товар недели</h2>
-          <p class="best-product__name">Вязанные корзинки</p>
-          <p class="best-product__description">Экологически чистая пряжа, ручная работа. Достпуны в шести рассцветкахб и
-            трех
-            размерах.</p>
+          <!-- <div class="best-product__header"> -->
+            <h2 class="best-product__header">Товар недели</h2>
+            <p class="best-product__name">Вязаные&nbsp;корзинки</p>
+          <!-- </div> -->
+          <p class="best-product__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и
+            трех размерах.</p>
           <table class="best-product__table">
             <tr class="best-product__table-row">
               <td class="best-product__table-column">Цвет:</td>
@@ -132,9 +133,23 @@
               <td class="best-product__table-column">15 см</td>
             </tr>
           </table>
-          <img class="best-product__image" src="./img/triple-set-mobile@1x.jpg"
-            alt="Вязанные корзинки в нескольких цветах и размерах." width="260" height="315">
         </div>
+        <!-- <div class="best-product__image-wrapper"> -->
+        <!-- <img class="best-product__image" src="./img/triple-set-mobile@1x.jpg"
+            alt="Вязанные корзинки в нескольких цветах и размерах."> -->
+        <picture class="best-product__image">
+          <source srcset="./img/triple-set-desktop@1x.jpg" media="(min-width: 1150px)" width="525" height="636"/>
+          <source srcset="./img/triple-set-tablet@1x.jpg" media="(min-width: 768px)" width="333" height="404"/>
+          <img class="best-product__image" src="./img/triple-set-mobile@1x.jpg"
+            alt="Вязанные корзинки в нескольких цветах и размерах." width="260" height="315"/>
+        </picture>
+
+        <!-- <picture >
+              <source srcset="./img/triple-set-desktop@1x.jpg" media="(min-width: 1150px)" />
+              <source srcset="./img/triple-set-tablet@1x.jpg" media="(min-width: 768px)" />
+              <img class="best-product__image" src="./img/triple-set-mobile@1x.jpg"  alt="Вязанные корзинки в нескольких цветах и размерах." />
+            </picture> -->
+        <!-- </div> -->
         <div class="best-product__purchase">
           <p class="best-product__price">Цена: 990 руб.</p>
           <a class="best-product__link" href="#">Заказать</a>
