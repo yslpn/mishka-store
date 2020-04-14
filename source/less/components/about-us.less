@@ -6,6 +6,12 @@
   background-color: @white;
   padding-top: 34px;
   padding-bottom: 34px;
+
+
+
+  @media @desktop {
+    padding-left: 168px;
+  }
 }
 
 .about-us__header {
@@ -16,18 +22,65 @@
   line-height: 1.2;
   text-align: left;
   color: @black;
+  margin-bottom: 30px;
+
+  @media @tablet {
+    font-size: 43px;
+    line-height: 1.16;
+    margin-bottom: 47px;
+  }
+
+  @media @desktop {
+    font-size: 53px;
+    line-height: 1.08;
+    margin-bottom: 44px;
+  }
 }
 
 .about-us__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   list-style: none;
   margin: 0;
   padding: 0;
+
+  @media @tablet {
+    flex-wrap: wrap;
+    align-items: flex-start;
+    max-height: 600px;
+  }
 }
 
 .about-us__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  height: 100px;
   font-size: 17px;
   font-weight: bold;
   line-height: 1.18;
   text-align: left;
   color: @black;
+  width: 260px;
+  margin-bottom: 30px;
+  position: relative;
+
+  svg {
+    path {
+      fill: @green;
+    }
+  }
+
+  @media @tablet {
+    font-size: 20px;
+    line-height: 1.1;
+    margin-bottom: 60px;
+    width: 300px;
+  }
+
+  @media @desktop {
+
+  }
 }
