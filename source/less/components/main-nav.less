@@ -1,41 +1,110 @@
 .main-nav {
-  background-color: @white;
+  height: 100%;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+
+  @media @tablet {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    padding: 0 50px;
+  }
+
+  @media @desktop {
+    padding: 0;
+    margin: 0 auto;
+    width: 1050px;
+  }
 }
 
 .main-nav__toggle {
   position: absolute;
+  top: 32px;
+  right: 32px;
+  display: block;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  border: none;
+  background-color: @white;
+  order: 4;
+
+  // &:hover,
+  // &:active {
+  // }
+
+  @media @tablet {
+    display: none;
+  }
+}
+
+.main-nav--closed {
+  .main-nav__user-list {
+    display: none;
+
+    @media @tablet {
+      display: flex;
+    }
+  }
+
+  .main-nav__site-list {
+    display: none;
+
+    @media @tablet {
+      display: flex;
+    }
+  }
+}
+
+.main-nav--opened .main-nav__toggle {
+  &::before,
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 8px;
+    right: -2px;
+
+    width: 25px;
+    height: 2px;
+
+    background-color: black;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  // &:active::before,
+  // &:active::after {
+  // }
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
   top: 0;
   right: 0;
+  width: 21px;
+  height: 2px;
+  background-color: black;
+  box-shadow: 0 6px 0 0 black, 0 12px 0 0 black;
 }
 
-.main-nav__list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.main-nav__item {
-  text-align: left;
-  box-shadow: 0 1px 0 0 #ececec, inset 0 1px 0 0 #ececec;
-}
-
-.main-nav__link {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 76px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  width: 320px;
+.main-nav__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 79px;
-  color: @black;
-  font-size: 17px;
-  font-weight: bold;
-  line-height: 1.41;
-  text-align: left;
-  text-decoration: none;
+  order: 1;
+  margin: 0 auto;
 
   &:hover {
     opacity: 0.6;
@@ -43,5 +112,30 @@
 
   &:active {
     opacity: 0.3;
+  }
+
+  @media @tablet {
+    margin: 0;
+    width: 40%;
+    position: unset;
+    height: 100%;
+    order: 2;
+  }
+
+  @media @desktop {
+    width: auto;
+  }
+}
+
+.main-nav__logo-image {
+  width: 86px;
+
+  @media @tablet {
+    margin-right: auto;
+    width: 112px;
+  }
+
+  @media @desktop {
+    width: 149px;
   }
 }

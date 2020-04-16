@@ -4,17 +4,52 @@
 
 .catalog__wrapper {
   padding-top: 30px;
+  max-width: 1150px;
+  display: flex;
+  flex-direction: column;
+
+  @media @desktop {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .catalog__header {
-  margin: 0;
-  padding: 42px 74px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 27px;
   font-weight: bold;
   line-height: 1.11;
-  text-align: center;
   color: @black;
   background-color: @grey-light;
+  max-width: 1150px;
+  margin: 0 auto;
+  height: 177px;
+  position: relative;
+
+  @media @tablet {
+    height: 255px;
+    font-size: 43px;
+    line-height: 1.16;
+
+    &::after {
+      display: block;
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      height: 34px;
+      background-image: url("./../../img/bg-zigzag-fill.svg");
+      background-position: bottom center;
+      width: 100%;
+    }
+  }
+
+  @media @desktop {
+    font-size: 53px;
+    line-height: 1.08;
+  }
 }
 
 .catalog__item {

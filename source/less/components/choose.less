@@ -1,15 +1,48 @@
+@color-svg: #149080;
+@choose-bg-color: #f9f9f9;
+@interior-bg-color: @green;
+@interior-hover-color: #59d5bc;
+@toys-bg-color: #56c3b2;
+@toys-hover-color: #46c1ae;
+
 .choose {
+  background-image: url("./../../img/hero-mobile@1x.jpg");
+  background-color: @choose-bg-color;
+  background-position: center -15px;
+  background-repeat: no-repeat;
+  background-size: auto;
   position: relative;
+  z-index: -1;
+
+  @media @tablet {
+    background-image: url("./../../img/hero-tablet@1x.jpg");
+    background-position: center 15px;
+    background-size: cover;
+  }
+
+  @media @desktop {
+    background-image: url("./../../img/hero-desktop@1x.jpg");
+    background-size: 1150px;
+  }
 }
 
-.choose__bg-image {
-  object-fit: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  width: 100%;
-  height: auto;
+.choose__wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-top: 76px;
+  min-height: 490px;
+
+  @media @tablet {
+    height: 746px;
+    padding-top: 161px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  @media @desktop {
+    max-width: 1150px;
+    margin: 0 auto;
+  }
 }
 
 .choose__header {
@@ -19,18 +52,54 @@
   text-align: center;
   color: @black;
   margin: 0;
-  padding: 76px 0 120px 0;
+
+  @media @tablet {
+    font-size: 43px;
+    line-height: 1.16;
+  }
+
+  @media @desktop {
+    font-size: 53px;
+    line-height: 1.08;
+  }
 }
 
 .choose__options {
   margin-left: -30px;
   margin-right: -30px;
+  margin-top: auto;
+
+  &::after {
+    display: none;
+  }
+
+  @media @tablet {
+    display: flex;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+    &::after {
+      display: block;
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -17px;
+      background-image: url("./../../img/bg-zigzag-fill.svg");
+      background-position: bottom center;
+      height: 34px;
+      width: 100%;
+      z-index: 1;
+    }
+  }
 }
 
 .choose__link {
-  display: block;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
   margin: 0;
-  padding: 30px;
   font-size: 19px;
   font-weight: bold;
   line-height: 1.26;
@@ -38,27 +107,53 @@
   color: @white;
   text-decoration: none;
   height: 103px;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 100%;
+
+  svg {
+    margin-left: auto;
+    fill-opacity: 0.5;
+    fill: @color-svg;
+  }
+
+  &:hover {
+    top: -5px;
+    background-color: @interior-hover-color;
+
+    svg {
+      fill-opacity: 0.7;
+    }
+  }
 
   &:active {
-    font-size: 20px;
-    font-weight: bold;
-    line-height: 1.5;
-    color: hsla(0, 0%, 100%, 0.3);
-  }
+    .choose__link-text {
+      opacity: 0.3;
+    }
 
-  &--interior {
-    background-color: @green;
-
-    &:hover {
-      background-color: hsl(168, 60%, 59%);
+    svg {
+      fill-opacity: 0.3;
     }
   }
 
-  &--toys {
-    background-color: hsl(171, 48%, 55%);
+  @media @tablet {
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+}
 
-    &:hover {
-      background-color: hsl(171, 50%, 52%);
-    }
+.choose__link--toys {
+  background-color: @toys-bg-color;
+
+  &:hover {
+    background-color: @toys-hover-color;
+  }
+}
+
+.choose__link--interior {
+  background-color: @interior-bg-color;
+
+  &:hover {
+    background-color: @interior-hover-color;
   }
 }

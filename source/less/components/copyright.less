@@ -1,13 +1,33 @@
 .copyright {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  text-decoration: none;
+  height: 50%;
+
+  &:hover {
+    svg {
+      fill: @footer-base-color;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media @tablet {
+    justify-content: space-between;
+  }
+}
+
+.copyright svg {
+  fill: @green;
 }
 
 .copyright__text {
   display: inline;
   margin: 0;
-  padding: 0;
+  padding-right: 30px;
   font-size: 19px;
   font-weight: bold;
   line-height: 0.95;
