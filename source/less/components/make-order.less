@@ -1,14 +1,41 @@
-.make-order {
-  background-color: @white;
-}
-
 .make-order__header {
   margin: 0;
-  padding: 42px 74px;
+  height: 177px;
   font-size: 27px;
   font-weight: bold;
   line-height: 1.11;
   text-align: center;
   color: @black;
   background-color: @grey-light;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: -1;
+
+  @media @tablet {
+    height: 226px;
+    font-size: 43px;
+    line-height: 1.16;
+
+    &::after {
+      display: block;
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      height: 34px;
+      background-image: url("./../../img/bg-zigzag-fill.svg");
+      background-position: bottom center;
+      width: 100%;
+    }
+  }
+
+  @media @desktop {
+    height: 255px;
+    font-size: 53px;
+    line-height: 1.08;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
