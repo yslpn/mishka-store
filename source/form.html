@@ -95,36 +95,38 @@
           <div class="form__wrapper">
             <fieldset class="form__item">
               <legend class="form__legend">Цвет</legend>
-              <label class="form__checkbox">
-                <input class="form__checkbox-input" type="checkbox" name="white" checked>
-                <span class="form__checkbox-box"></span>
-                Белый
-              </label>
-              <label class="form__checkbox">
-                <input class="form__checkbox-input" type="checkbox" name="grey" checked>
-                <span class="form__checkbox-box"></span>
-                Серый
-              </label>
-              <label class="form__checkbox">
-                <input class="form__checkbox-input" type="checkbox" name="tiffany">
-                <span class="form__checkbox-box"></span>
-                «Тиффани»
-              </label>
-              <label class="form__checkbox">
-                <input class="form__checkbox-input" type="checkbox" name="black">
-                <span class="form__checkbox-box"></span>
-                Чёрный
-              </label>
-              <label class="form__checkbox">
-                <input class="form__checkbox-input" type="checkbox" name="pink">
-                <span class="form__checkbox-box"></span>
-                Розовый
-              </label>
-              <label class="form__checkbox">
-                <input class="form__checkbox-input" type="checkbox" name="orange">
-                <span class="form__checkbox-box"></span>
-                Оранжевый
-              </label>
+              <div class="form__flex-container">
+                <label class="form__checkbox">
+                  <input class="form__checkbox-input" type="checkbox" name="white" checked>
+                  <span class="form__checkbox-box"></span>
+                  Белый
+                </label>
+                <label class="form__checkbox">
+                  <input class="form__checkbox-input" type="checkbox" name="grey" checked>
+                  <span class="form__checkbox-box"></span>
+                  Серый
+                </label>
+                <label class="form__checkbox">
+                  <input class="form__checkbox-input" type="checkbox" name="tiffany">
+                  <span class="form__checkbox-box"></span>
+                  «Тиффани»
+                </label>
+                <label class="form__checkbox">
+                  <input class="form__checkbox-input" type="checkbox" name="black">
+                  <span class="form__checkbox-box"></span>
+                  Чёрный
+                </label>
+                <label class="form__checkbox">
+                  <input class="form__checkbox-input" type="checkbox" name="pink">
+                  <span class="form__checkbox-box"></span>
+                  Розовый
+                </label>
+                <label class="form__checkbox">
+                  <input class="form__checkbox-input" type="checkbox" name="orange">
+                  <span class="form__checkbox-box"></span>
+                  Оранжевый
+                </label>
+              </div>
             </fieldset>
           </div>
           <div class="form__wrapper">
@@ -150,7 +152,7 @@
               <input class="form__tel-input" type="tel" name="telephone" placeholder="+7 XXX XXX XX XX*" required>
             </fieldset>
             <fieldset class="form__item">
-              <legend class="form__legend">E-mail</legend>
+              <legend class="form__legend form__legend--email">E-mail</legend>
               <input class="form__email-input" type="email" name="e-mail" placeholder="Ваш Email*" required>
             </fieldset>
           </div>
@@ -161,8 +163,10 @@
                 placeholder="Опишите все ваши пожелания к заказу"></textarea>
             </fieldset>
           </div>
-          <small class="form__info">*Поля обязательны для заполнения</small>
-          <input class="form__submit" type="submit" value="Отправить заказ">
+          <footer class="form__footer">
+            <small class="form__info">*Поля обязательны для заполнения</small>
+            <input class="form__submit" type="submit" value="Отправить заказ">
+          </footer>
         </form>
       </div>
     </section>
