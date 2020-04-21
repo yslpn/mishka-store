@@ -19,13 +19,48 @@
   @media @tablet {
     font-size: 17px;
     line-height: 1.76;
-    margin-bottom: 60px;
+    margin-bottom: 0;
+  }
+}
+
+.form__wrapper {
+  position: relative;
+
+  @media @tablet {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 167px;
+  }
+
+  @media @desktop {
+    padding-left: 225px;
   }
 }
 
 .form__wrapper:nth-of-type(2n) {
   @media @tablet {
     background-color: @grey-light;
+    margin-left: -50px;
+    margin-right: -50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 50px;
+    padding-left: 217px;
+  }
+
+  @media @desktop {
+    margin: 0;
+    padding-right: 0;
+  }
+
+  .form__legend {
+    @media @tablet {
+      left: 100px;
+    }
+
+    @media @desktop {
+      left: 50px;
+    }
   }
 }
 
@@ -41,6 +76,8 @@
   @media @tablet {
     font-size: 19px;
     line-height: 0.95;
+    border: none;
+    // padding-left: 167px;
   }
 
   @media @desktop {
@@ -58,6 +95,21 @@
   color: @green;
   padding-right: 25px;
   text-transform: uppercase;
+
+  @media @tablet {
+    position: absolute;
+    top: 70px;
+    left: 50px;
+  }
+
+  @media @desktop {
+    left: 50px;
+  }
+
+  &--email {
+    top: unset;
+    bottom: 70px;
+  }
 }
 
 .form__checkbox,
@@ -75,14 +127,35 @@
   }
 }
 
+.form__checkbox {
+  @media @tablet {
+    margin: 0;
+  }
+}
+
 .form__radio:first-of-type,
 .form__checkbox:first-of-type,
 .form__text:first-of-type {
   margin-top: 30px;
+
+  @media @tablet {
+    margin-top: 0;
+  }
 }
 
 .form__radio-box {
   border-radius: 100%;
+}
+
+.form__flex-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  @media @tablet {
+    justify-content: space-between;
+    height: 204px;
+  }
 }
 
 .form__checkbox-input,
@@ -158,7 +231,15 @@
   @media @tablet {
     font-size: 19px;
     line-height: 0.95;
-    margin-bottom: 40px;
+    margin-bottom: 24px;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.form__text-input {
+  @media @tablet {
+    margin-left: 25px;
   }
 }
 
@@ -179,6 +260,25 @@
     border-color: @green;
     outline: none;
   }
+
+  // @media @tablet {
+  //   margin: 0;
+  // }
+}
+
+.form__email-input {
+  @media @tablet {
+    margin-top: 24px;
+  }
+}
+
+.form__tel-input,
+.form__email-input {
+  margin-bottom: 24px;
+
+  @media @tablet {
+    margin-bottom: unset;
+  }
 }
 
 .form__text-input::placeholder,
@@ -191,15 +291,6 @@
   @media @tablet {
     font-size: 19px;
     line-height: 0.95;
-  }
-}
-
-.form__tel-input,
-.form__email-input {
-  margin-bottom: 24px;
-
-  @media @tablet {
-    margin-bottom: 40px;
   }
 }
 
@@ -219,6 +310,10 @@
     border-color: @green;
     outline: none;
   }
+
+  @media @tablet {
+    margin: 0;
+  }
 }
 
 .form__info {
@@ -233,6 +328,8 @@
     font-size: 17px;
     line-height: 1.76;
     text-align: right;
+    margin-top: auto;
+    margin-bottom: auto;
   }
 }
 
@@ -246,6 +343,7 @@
   color: @grey-dark;
   text-transform: uppercase;
   background-color: @white;
+  width: 100%;
 
   &:hover {
     color: @white;
@@ -259,5 +357,13 @@
 
   @media @tablet {
     max-width: 230px;
+  }
+}
+
+.form__footer {
+  @media @tablet {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
   }
 }
