@@ -1,10 +1,16 @@
-.contacts {
-  background-color: @white;
-}
-
 .contacts__wrapper {
-  background-color: @white;
   padding: 45px 0 40px 0;
+  position: relative;
+
+  @media @desktop {
+    height: 457px;
+    padding: 0;
+    margin-top: 70px;
+    margin-bottom: 106px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
 }
 
 .contacts__header {
@@ -14,16 +20,79 @@
   text-align: left;
   color: @black;
   margin: 0 30px;
+  margin-bottom: 42px;
+
+  @media @tablet {
+    font-size: 43px;
+    line-height: 1.16;
+    margin: 0 50px;
+    margin-bottom: 65px;
+  }
+
+  @media @desktop {
+    font-size: 53px;
+    line-height: 1.08;
+    margin-right: calc(50% + 50px);
+    margin-left: 168px;
+    margin-top: 81px;
+  }
+}
+
+.contacts__data {
+  margin: 0 30px;
+
+  @media @tablet {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 50px;
+  }
+
+  @media @desktop {
+    flex-direction: column;
+    margin-right: calc(50% + 50px);
+    margin-left: 168px;
+  }
 }
 
 .contacts__address,
 .contacts__email {
+  display: flex;
   font-size: 15px;
   font-weight: normal;
   line-height: 2;
   text-align: left;
   color: @grey-dark;
-  margin: 0 30px;
+
+  @media @tablet {
+    font-size: 17px;
+    line-height: 1.76;
+    width: 50%;
+  }
+
+  @media @desktop {
+    width: unset;
+  }
+}
+
+.contacts__email-title,
+.contacts__address-title {
+  margin: 0;
+  margin-right: 32px;
+
+  @media @tablet {
+    margin-right: 26px;
+  }
+}
+
+.contacts__email-value {
+  color: @grey-dark;
+  text-decoration: none;
+  border-bottom: 1px solid @green;
+  height: 27px;
+}
+
+.contacts__address-value {
+  margin: 0;
 }
 
 .contacts__write-to-us {
@@ -31,6 +100,7 @@
   justify-content: center;
   align-items: center;
   height: 52px;
+  max-width: 260px;
   border: solid 2px @grey-dark;
   font-size: 17px;
   font-weight: bold;
@@ -40,6 +110,8 @@
   text-transform: uppercase;
   text-decoration: none;
   margin: 0 30px;
+  margin-left: auto;
+  margin-right: auto;
 
   &:hover {
     color: @white;
@@ -50,9 +122,30 @@
     color: @white-30;
     background-color: @grey-dark;
   }
+
+  @media @tablet {
+    max-width: 230px;
+  }
+
+  @media @desktop {
+    margin-right: calc(50% + 50px);
+    margin-left: 168px;
+    margin-top: auto;
+  }
 }
 
 .contacts__map {
-  height: auto;
+  height: 457px;
   width: 100%;
+  margin: 40px 0;
+  object-fit: cover;
+
+  @media @desktop {
+    margin: 0;
+    width: 50%;
+    height: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
 }
