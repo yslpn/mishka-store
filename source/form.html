@@ -73,11 +73,13 @@
 
     <section class="make-order">
       <h1 class="make-order__header">Вязание на заказ</h1>
-      <div class="container make-order__wrapper">
-        <form class="make-order__form form" id="order" action="https://echo.htmlacademy.ru" method="post">
+      <form class="make-order__form form" id="order" action="https://echo.htmlacademy.ru" method="post">
+        <div class="container">
           <p class="form__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму
             заказы и мы свяжемся с вами, чтобы уточнить детали.</p>
-          <div class="form__wrapper">
+        </div>
+        <div class="form__section">
+          <div class="container form__wrapper">
             <fieldset class="form__item">
               <legend class="form__legend">Тип</legend>
               <label class="form__radio">
@@ -92,7 +94,9 @@
               </label>
             </fieldset>
           </div>
-          <div class="form__wrapper">
+        </div>
+        <div class="form__section">
+          <div class="container form__wrapper">
             <fieldset class="form__item">
               <legend class="form__legend">Цвет</legend>
               <div class="form__flex-container">
@@ -129,7 +133,9 @@
               </div>
             </fieldset>
           </div>
-          <div class="form__wrapper">
+        </div>
+        <div class="form__section">
+          <div class="container form__wrapper">
             <fieldset class="form__item">
               <legend class="form__legend">ФИО</legend>
               <label class="form__text">
@@ -146,7 +152,9 @@
               </label>
             </fieldset>
           </div>
-          <div class="form__wrapper">
+        </div>
+        <div class="form__section">
+          <div class="container form__wrapper">
             <fieldset class="form__item">
               <legend class="form__legend">Телефон</legend>
               <input class="form__tel-input" type="tel" name="telephone" placeholder="+7 XXX XXX XX XX*" required>
@@ -156,19 +164,23 @@
               <input class="form__email-input" type="email" name="e-mail" placeholder="Ваш Email*" required>
             </fieldset>
           </div>
-          <div class="form__wrapper">
+        </div>
+        <div class="form__section">
+          <div class="container form__wrapper">
             <fieldset class="form__item">
               <legend class="form__legend">Доп</legend>
               <textarea class="form__textarea-input" form="order" name="extra"
                 placeholder="Опишите все ваши пожелания к заказу"></textarea>
             </fieldset>
           </div>
+        </div>
+        <div class="container">
           <footer class="form__footer">
             <small class="form__info">*Поля обязательны для заполнения</small>
             <input class="form__submit" type="submit" value="Отправить заказ">
           </footer>
-        </form>
-      </div>
+        </div>
+      </form>
     </section>
 
   </main>
