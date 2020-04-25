@@ -4,8 +4,18 @@
     display: block;
     background-image: url("../img/bg-zigzag-line.svg");
     background-position: center bottom;
+    background-size: 100%;
+    background-repeat: no-repeat;
     height: 23px;
     width: 100%;
+  }
+
+  @media @desktop {
+    &::after {
+      max-width: 1050px;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 }
 
