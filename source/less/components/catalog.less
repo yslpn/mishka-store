@@ -1,9 +1,15 @@
 .catalog__wrapper {
-  padding-top: 128px;
+  padding-top: 30px;
   display: flex;
   flex-direction: column;
 
+
+  @media @tablet {
+    padding-top: 60px;
+  }
+
   @media @desktop {
+    padding-top: 128px;
     flex-direction: row;
     justify-content: space-between;
   }
@@ -23,7 +29,7 @@
   position: relative;
 
   @media @tablet {
-    height: 255px;
+    height: 244px;
     font-size: 43px;
     line-height: 1.16;
 
@@ -32,7 +38,7 @@
       content: "";
       position: absolute;
       left: 0;
-      bottom: -18px;
+      bottom: 0;
       height: 34px;
       background-image: url("../img/bg-zigzag-fill.svg");
       background-position: bottom center;
@@ -48,4 +54,12 @@
 
 .catalog__item {
   margin-bottom: 30px;
+
+  @media @tablet  {
+    margin-bottom: 50px;
+  }
+
+  @media @desktop {
+    margin-bottom: 30px;
+  }
 }
