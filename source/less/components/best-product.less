@@ -38,8 +38,7 @@
   }
 
   @media @desktop {
-    max-width: 1050px;
-    height: 786px;
+    min-height: 786px;
     padding-left: 168px;
     padding-top: 54px;
     padding-bottom: 73px;
@@ -79,7 +78,7 @@
   }
 
   @media @desktop {
-    margin-bottom: 52px;
+    margin-bottom: 48px;
     font-size: 53px;
     line-height: 1.08;
   }
@@ -94,6 +93,7 @@
   margin: 0;
   padding: 0;
   margin-bottom: 30px;
+  text-transform: uppercase;
 
   @media @tablet {
     display: block;
@@ -111,6 +111,9 @@
     font-size: 17px;
     line-height: 1;
     text-align: center;
+    width: 70px;
+    margin-left: 47px;
+    margin-top: 12px;
   }
 }
 
@@ -132,6 +135,7 @@
   @media @desktop {
     font-size: 17px;
     line-height: 1.76;
+    margin-bottom: 50px;
   }
 }
 
@@ -145,6 +149,10 @@
   margin: 0;
   padding: 0;
   margin-bottom: 28px;
+
+  @media @tablet {
+    margin-bottom: 0;
+  }
 }
 
 .best-product__table-row {
@@ -175,26 +183,26 @@
 }
 
 .best-product__purchase {
-  font-size: 17px;
-  font-weight: bold;
-  text-align: center;
-  color: @grey-dark;
   margin-top: 30px;
 
   @media @tablet {
     margin-top: auto;
     width: 292px;
   }
-
-  @media @desktop {
-    margin-top: 111px;
-  }
 }
 
 .best-product__price {
+  color: @grey-dark;
+  font-size: 17px;
+  font-weight: bold;
   line-height: 1.41;
+  text-align: center;
   margin: 0;
-  padding: 0;
+
+  @media @tablet {
+    font-size: 20px;
+    line-height: 1.2;
+  }
 }
 
 .best-product__link {
@@ -203,12 +211,14 @@
   align-items: center;
   height: 52px;
   text-decoration: none;
+  color: @grey-dark;
   border: solid 2px @grey-dark;
+  font-size: 17px;
+  font-weight: bold;
   line-height: 1.18;
   color: @grey-dark;
   text-transform: uppercase;
   margin-top: 28px;
-
 
   &:hover {
     color: @white;
@@ -218,5 +228,9 @@
   &:active {
     color: @white-30;
     background-color: @grey-dark;
+  }
+
+  @media @tablet {
+    margin-top: 36px;
   }
 }
