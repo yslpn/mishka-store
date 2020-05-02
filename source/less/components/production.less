@@ -1,33 +1,60 @@
 .production {
-  margin: 30px 0 58px 0;
-}
+  margin-bottom: 58px;
 
-.production .container {
-  max-width: 1150px;
+  @media @tablet {
+    margin-bottom: 64px;
+  }
+
+  @media @desktop {
+    margin-bottom: 100px;
+  }
 }
 
 .production__wrapper {
   box-shadow: 0 0 0 1px #ececec;
   padding-bottom: 34px;
-  padding-top: 34px;
+  padding-top: 25px;
 
   display: flex;
   flex-direction: column;
 
   @media @tablet {
     padding-top: 0;
+    padding-bottom: 46px;
   }
 
   @media @desktop {
     flex-wrap: wrap;
     height: 455px;
-    width: 1150px;
+    padding-bottom: 60px;
   }
 }
 
 .production__header {
+  display: flex;
+  align-items: center;
+  margin-left: 34px;
+  padding: 0;
+  margin-bottom: 26px;
+
+  @media @tablet {
+    margin-left: 42px;
+    margin-bottom: 0;
+  }
+
+  @media @desktop {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    margin: 0;
+    margin-left: 18px;
+    margin-top: 40px;
+    margin-bottom: 0;
+  }
+}
+
+.production__title {
   margin: 0;
-  padding: 0 34px 29px 91px;
   font-size: 17px;
   font-weight: bold;
   font-stretch: normal;
@@ -36,37 +63,40 @@
   letter-spacing: normal;
   text-align: left;
   color: @black;
+  margin-left: 25px;
 
   @media @tablet {
     font-size: 20px;
     line-height: 1.2;
-    padding-bottom: 0;
+    margin-left: 32px;
   }
 
   @media @desktop {
     padding-right: 0;
     padding-left: 0;
-    padding-top: 100px;
+    margin-left: 0;
+    margin-top: 22px;
+    width: 230px;
   }
 }
 
 .production__description {
-  margin: 0;
-  padding: 34px 34px 29px 34px;
+  margin: 24px 34px 24px 34px;
   font-size: 13px;
   line-height: 1.85;
   text-align: left;
   color: @grey-dark;
 
   @media @tablet {
+    margin: 34px 34px 30px 42px;
     font-size: 15px;
     line-height: 2;
   }
 
   @media @desktop {
     width: 230px;
-    padding-left: 0;
-    padding-right: 0;
+    margin: 0;
+    margin-left: 18px;
   }
 }
 
@@ -75,7 +105,7 @@
 
   @media @tablet {
     order: -1;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
 
   @media @desktop {
@@ -92,14 +122,17 @@
 }
 
 .production__buy {
-  margin: 0 34px;
+  margin-left: 34px;
+  margin-right: 34px;
+  margin-top: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 52px;
   text-decoration: none;
   border: solid 2px @grey-dark;
-  line-height: 1.18;
+  font-size: 17px;
+  line-height: 0.94;
   color: @grey-dark;
   text-transform: uppercase;
   font-weight: bold;
@@ -114,8 +147,15 @@
     background-color: @grey-dark;
   }
 
+  @media @tablet {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
   @media @desktop {
+    max-width: 230px;
     margin: 0;
-    width: 260px;
+    margin-left: 18px;
+    margin-top: auto;
   }
 }

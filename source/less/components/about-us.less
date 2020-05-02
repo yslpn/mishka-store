@@ -4,11 +4,16 @@
 
 .about-us__wrapper {
   background-color: @white;
-  padding-top: 34px;
+  padding-top: 24px;
   padding-bottom: 34px;
+
+  @media @tablet {
+    padding-top: 55px;
+  }
 
   @media @desktop {
     padding-left: 168px;
+    padding-top: 55px;
   }
 }
 
@@ -31,7 +36,7 @@
   @media @desktop {
     font-size: 53px;
     line-height: 1.08;
-    margin-bottom: 44px;
+    margin-bottom: 48px;
   }
 }
 
@@ -47,6 +52,7 @@
     flex-wrap: wrap;
     align-items: flex-start;
     max-height: 600px;
+    max-width: 700px;
   }
 }
 
@@ -61,10 +67,12 @@
   text-align: left;
   color: @black;
   width: 260px;
-  margin-bottom: 30px;
+  margin-bottom: 24px;
   position: relative;
 
   svg {
+    width: 55px;
+
     path {
       fill: @green;
     }
@@ -73,7 +81,7 @@
   @media @tablet {
     font-size: 20px;
     line-height: 1.1;
-    margin-bottom: 60px;
+    margin-bottom: 55px;
     width: 300px;
   }
 }

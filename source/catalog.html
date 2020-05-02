@@ -75,7 +75,13 @@
       <h1 class="catalog__header">Каталог товаров</h1>
       <div class="container catalog__wrapper">
         <article class="catalog__item product">
-          <img class="product__image" src="./img/photo-hare-mobile@1x.jpg" alt="Кукла зайчик" width="260" height="195">
+
+          <picture>
+            <source srcset="./img/photo-hare-desktop@1x.jpg" media="(min-width: 1150px)" />
+            <source srcset="./img/photo-hare-tablet@1x.jpg" media="(min-width: 768px)" />
+            <img class="product__image" src="./img/photo-hare-mobile@1x.jpg" alt="Кукла зайчик" />
+          </picture>
+
           <div class="product__info">
             <a class="product__name">Зайчик-попрыгайчик</a>
             <p class="product__params">Рост 30 см, вес 200 г</p>
@@ -92,8 +98,11 @@
           </div>
         </article>
         <article class="catalog__item product">
-          <img class="product__image" src="./img/photo-bowl-mobile@1x.jpg" alt="Корзина со сложенным бельём" width="260"
-            height="195">
+          <picture>
+            <source srcset="./img/photo-bowl-desktop@1x.jpg" media="(min-width: 1150px)" />
+            <source srcset="./img/photo-bowl-tablet@1x.jpg" media="(min-width: 768px)" />
+            <img class="product__image" src="./img/photo-bowl-mobile@1x.jpg" alt="Корзина со сложенным бельём" />
+          </picture>
           <div class="product__info">
             <a class="product__name">Корзинка для белья</a>
             <p class="product__params">Диаметр 15 см, высота 10 см</p>
@@ -110,10 +119,13 @@
           </div>
         </article>
         <article class="catalog__item product">
-          <img class="product__image" src="./img/photo-toys-mobile@1x.jpg" alt="Корзина с игрушками" width="260"
-            height="195">
+          <picture>
+            <source srcset="./img/photo-toys-desktop@1x.jpg" media="(min-width: 1150px)" />
+            <source srcset="./img/photo-toys-tablet@1x.jpg" media="(min-width: 768px)" />
+            <img class="product__image" src="./img/photo-toys-mobile@1x.jpg" alt="Корзина с игрушками" />
+          </picture>
           <div class="product__info">
-            <a class="product__name">Большая корзинка для игрушек</a>
+            <a class="product__name">Большая корзинка<br>для игрушек</a>
             <p class="product__params">Диаметр 30 см, высота 30 см</p>
             <a class="product__buy">
               <span class="product__price">1500 руб.</span>
@@ -133,7 +145,17 @@
     <section class="production">
       <div class="container">
         <div class="production__wrapper">
-          <h2 class="production__header">Процесс производства</h2>
+          <header class="production__header">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32"
+              enable-background="new 0 0 32 32" xml:space="preserve">
+              <g transform="translate(0 192)">
+                <path fill="#63d1bb"
+                  d="M26-177l6-4v16l-6-4V-177z M24-177v8c0,2.209-1.791,4-4,4H4c-2.209,0-4-1.791-4-4v-8c0-2.209,1.791-4,4-4h10 c0-1.105,0.895-2,2-2v-2H5c-0.553,0-1-0.447-1-1s0.447-1,1-1h12c0.553,0,1,0.447,1,1v3c1.105,0,2,0.895,2,2 C22.209-181,24-179.209,24-177z M12-177H4v8h8V-177z M20-176c0-0.553-0.447-1-1-1h-4c-0.553,0-1,0.447-1,1s0.447,1,1,1h4 C19.553-175,20-175.447,20-176z" />
+              </g>
+            </svg>
+            <h2 class="production__title">Процесс производства</h2>
+          </header>
           <picture class="production__video">
             <source srcset="./img/video-desktop@1x.jpg" media="(min-width: 1150px)" />
             <source srcset="./img/video-tablet@1x.jpg" media="(min-width: 768px)" />

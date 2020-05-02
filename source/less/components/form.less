@@ -37,30 +37,9 @@
   }
 }
 
-.form__wrapper:nth-of-type(2n) {
+.form__section:nth-of-type(odd) {
   @media @tablet {
     background-color: @grey-light;
-    margin-left: -50px;
-    margin-right: -50px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    padding-right: 50px;
-    padding-left: 217px;
-  }
-
-  @media @desktop {
-    margin: 0;
-    padding-right: 0;
-  }
-
-  .form__legend {
-    @media @tablet {
-      left: 100px;
-    }
-
-    @media @desktop {
-      left: 50px;
-    }
   }
 }
 
@@ -365,5 +344,9 @@
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
+  }
+
+  @media @desktop {
+    width: 1050px;
   }
 }
