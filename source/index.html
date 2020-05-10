@@ -113,10 +113,8 @@
     <section class="best-product">
       <div class="container best-product__wrapper">
         <div class="best-product__info">
-          <!-- <div class="best-product__header"> -->
           <h2 class="best-product__header">Товар недели</h2>
           <p class="best-product__name">Вязаные&nbsp;корзинки</p>
-          <!-- </div> -->
           <p class="best-product__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и
             трех размерах.</p>
           <table class="best-product__table">
@@ -142,7 +140,7 @@
         </picture>
         <div class="best-product__purchase">
           <p class="best-product__price">Цена: 990 руб.</p>
-          <a class="best-product__link" href="#">Заказать</a>
+          <button class="best-product__link open-popup">Сделать заказ</button>
         </div>
       </div>
     </section>
@@ -293,24 +291,30 @@
 
     <section class="popup" style="display: none;">
       <div class="popup__wrapper">
-        <form class="popup__form form" method="post" action="https://echo.htmlacademy.ru">
-          <h2 class="form__hedaer ">Добавить в корзину</h2>
-          <p class="form__choose-size">Выбирите размер:</p>
-          <ul class="form__list">
-            <li class="form__item">
-              <input class="form__input" id="S-size" type="radio" name="size" value="S-size" checked>
-              <label class="form__lable" for="S-size">S</label>
+        <form class="popup__form" method="post" action="https://echo.htmlacademy.ru">
+          <h2 class="popup__hedaer ">Добавить в корзину</h2>
+          <p class="popup__choose-size">Выбирите размер:</p>
+          <ul class="popup__list">
+            <li class="popup__item">
+              <label class="popup__lable">
+                <input class="popup__input" id="S-size" type="radio" name="size" value="S-size" checked>
+                <span class="popup__radio-box">S</span>
+              </label>
             </li>
-            <li class="form__item">
-              <input class="form__input" id="M-size" type="radio" name="size" value="M-size">
-              <label class="form__lable" for="M-size">M</label>
+            <li class="popup__item">
+              <label class="popup__lable">
+                <input class="popup__input" id="M-size" type="radio" name="size" value="M-size">
+                <span class="popup__radio-box">M</span>
+              </label>
             </li>
-            <li class="form__item">
-              <input class="form__input" id="L-size" type="radio" name="size" value="L-size">
-              <label class="form__lable" for="L-size">L</label>
+            <li class="popup__item">
+              <label class="popup__lable" for="L-size">
+                <input class="popup__input" id="L-size" type="radio" name="size" value="L-size">
+                <span class="popup__radio-box">L</span>
+              </label>
             </li>
           </ul>
-          <button class="form__submit" type="submit">Добавить</button>
+          <button class="popup__submit" type="submit">Добавить</button>
         </form>
       </div>
     </section>
