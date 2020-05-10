@@ -23,9 +23,11 @@ const openModalBtn = document.querySelector('.open-popup');
 const closeModalBtn = document.querySelector('.popup');
 const modal = document.querySelector('.popup');
 const main = document.querySelector('main');
+const body = document.querySelector('body');
 
 function openModal() {
   modal.style.display = 'flex';
+  body.style.overflow = 'hidden';
   modal.querySelector(FOCUSABLE_SELECTORS).focus();
   const focusableElements = main.querySelectorAll(FOCUSABLE_SELECTORS);
   focusableElements.forEach(el => el.setAttribute('tabindex', '-1'));
@@ -36,6 +38,7 @@ function openModal() {
 function closeModal(event) {
   if (event.target.className === 'popup') {
     modal.style.display = 'none';
+    body.style.overflow = 'auto';
     const focusableElements = main.querySelectorAll(FOCUSABLE_SELECTORS);
     focusableElements.forEach(el => el.removeAttribute('tabindex'));
     modal.setAttribute('aria-hidden', 'true');
