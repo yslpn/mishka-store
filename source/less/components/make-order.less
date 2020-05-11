@@ -22,11 +22,13 @@
       content: "";
       position: absolute;
       left: 0;
-      bottom: -18px;
-      height: 34px;
+      bottom: -10px;
       background-image: url("../img/bg-zigzag-fill.svg");
       background-position: bottom center;
+      background-size: auto 23px;
+      height: 23px;
       width: 100%;
+      z-index: 1;
     }
   }
 
@@ -36,5 +38,11 @@
     line-height: 1.08;
     margin-left: auto;
     margin-right: auto;
+
+    &::after {
+      bottom: -16px;
+      background-size: auto 34px;
+      height: 34px;
+    }
   }
 }

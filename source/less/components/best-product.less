@@ -7,9 +7,9 @@
     content: "";
     display: block;
     background-image: url("../img/bg-zigzag-line.svg");
-    background-position: center bottom;
     background-size: 100%;
-    background-repeat: no-repeat;
+    background-position: right -25px bottom;
+    background-repeat: repeat-x;
     height: 23px;
     width: 100%;
   }
@@ -19,6 +19,8 @@
       max-width: 1050px;
       margin-left: auto;
       margin-right: auto;
+      margin-top: -10px;
+      margin-bottom: 10px;
     }
   }
 }
@@ -39,9 +41,9 @@
 
   @media @desktop {
     min-height: 786px;
-    padding-left: 168px;
+    padding-left: 174px;
     padding-top: 54px;
-    padding-bottom: 73px;
+    padding-bottom: 78px;
     margin-left: auto;
   }
 }
@@ -213,6 +215,7 @@
   justify-content: center;
   align-items: center;
   height: 52px;
+  width: 100%;
   border: solid 2px @grey-dark;
   text-decoration: none;
   text-transform: uppercase;
@@ -221,6 +224,8 @@
   line-height: 1.18;
   color: @grey-dark;
   margin-top: 28px;
+  background: @white;
+  cursor: pointer;
 
   &:hover {
     color: @white;

@@ -38,16 +38,25 @@
       position: absolute;
       left: 0;
       bottom: 0;
-      height: 34px;
       background-image: url("../img/bg-zigzag-fill.svg");
       background-position: bottom center;
+      background-size: auto 23px;
+      height: 23px;
       width: 100%;
+      z-index: 1;
     }
   }
 
   @media @desktop {
+    height: 255px;
     font-size: 53px;
     line-height: 1.08;
+
+    &::after {
+      bottom: -16px;
+      background-size: auto 34px;
+      height: 34px;
+    }
   }
 }
 

@@ -80,14 +80,14 @@
         </div>
         <div class="form__section">
           <div class="container form__wrapper">
-            <fieldset class="form__item">
+            <fieldset class="form__item form__item--type">
               <legend class="form__legend">Тип</legend>
-              <label class="form__radio">
+              <label class="form__radio form__radio--interior">
                 <input class="form__radio-input" type="radio" name="choose-type" checked>
                 <span class="form__radio-box"></span>
                 Аксессуар для интерьера
               </label>
-              <label class="form__radio">
+              <label class="form__radio form__radio--toys">
                 <input class="form__radio-input" type="radio" name="choose-type">
                 <span class="form__radio-box"></span>
                 Детская игрушка
@@ -97,7 +97,7 @@
         </div>
         <div class="form__section">
           <div class="container form__wrapper">
-            <fieldset class="form__item">
+            <fieldset class="form__item form__item--color">
               <legend class="form__legend">Цвет</legend>
               <div class="form__flex-container">
                 <label class="form__checkbox">
@@ -136,7 +136,7 @@
         </div>
         <div class="form__section">
           <div class="container form__wrapper">
-            <fieldset class="form__item">
+            <fieldset class="form__item form__item--name">
               <legend class="form__legend">ФИО</legend>
               <label class="form__text">
                 Имя:
@@ -155,11 +155,11 @@
         </div>
         <div class="form__section">
           <div class="container form__wrapper">
-            <fieldset class="form__item">
-              <legend class="form__legend">Телефон</legend>
+            <fieldset class="form__item form__item--phone">
+              <legend class="form__legend">Тел</legend>
               <input class="form__tel-input" type="tel" name="telephone" placeholder="+7 XXX XXX XX XX*" required>
             </fieldset>
-            <fieldset class="form__item">
+            <fieldset class="form__item form__item--email">
               <legend class="form__legend form__legend--email">E-mail</legend>
               <input class="form__email-input" type="email" name="e-mail" placeholder="Ваш Email*" required>
             </fieldset>
@@ -167,7 +167,7 @@
         </div>
         <div class="form__section">
           <div class="container form__wrapper">
-            <fieldset class="form__item">
+            <fieldset class="form__item form__item--extra">
               <legend class="form__legend">Доп</legend>
               <textarea class="form__textarea-input" form="order" name="extra"
                 placeholder="Опишите все ваши пожелания к заказу"></textarea>

@@ -1,3 +1,149 @@
+@backgorund-color: rgba(255, 255, 255, 0.9);
+@popup-shadow-color: rgba(0, 1, 1, 0.25);
+@border-popup-color: #c6c6c6;
+@radio-box-color: rgba(68, 68, 68, 0.1);
+@radio-box-hover-color: rgba(68, 68, 68, 0.3);
+
+
 .popup {
-  background-color: @white;
+  position: fixed;
+  background: @backgorund-color;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+}
+
+.popup__wrapper {
+  height: 336px;
+  width: 100vw;
+  min-width: 320px;
+  background: white;
+  box-shadow: 0 5px 10px 0 @popup-shadow-color;
+  border: solid 1px @border-popup-color;
+  border-right: none;
+  border-left: none;
+  padding: 36px 30px 46px 30px;
+
+  @media @tablet {
+    border: solid 1px @border-popup-color;
+    max-width: 566px;
+    padding: 51px 105px 46px 105px;
+  }
+}
+
+.popup__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.popup__hedaer {
+  font-size: 25px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+
+  @media @tablet {
+    font-size: 30px;
+    line-height: 1.9;
+  }
+}
+
+.popup__choose-size {
+  font-size: 15px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: normal;
+  text-align: center;
+  margin: 0;
+
+  @media @tablet {
+    font-size: 17px;
+    line-height: 1.76;
+  }
+}
+
+.popup__list {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
+
+.popup__lable {
+  font-size: 17px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.94;
+  letter-spacing: normal;
+  text-align: center;
+}
+
+.popup__input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.popup__radio-box {
+  width: 82px;
+  height: 52px;
+  border: solid 2px @radio-box-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    border-color: @radio-box-hover-color;
+  }
+
+  &:active {
+    border-color: @green;
+  }
+
+  @media @tablet {
+    width: 112px;
+    height: 52px;
+  }
+}
+
+.popup__input:checked + .popup__radio-box,
+.popup__input:focus + .popup__radio-box {
+  border-color: @green;
+}
+
+.popup__submit {
+  border: none;
+  width: 100%;
+  max-width: 350px;
+  height: 52px;
+  background-color: @green;
+  text-transform: uppercase;
+  font-size: 17px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.94;
+  letter-spacing: normal;
+  text-align: center;
+  color: @white;
 }
