@@ -8,6 +8,11 @@
   <link rel="stylesheet" href="./css/style.css">
   <script defer src="./js/app.js"></script>
   <script defer src="./js/popup.js"></script>
+  <script>
+    // Picture element HTML5 shiv
+    document.createElement( "picture" );
+  </script>
+  <script src="https://cdn.rawgit.com/scottjehl/picturefill/3.0.2/dist/picturefill.min.js" async></script>
 </head>
 
 <body>
@@ -134,14 +139,14 @@
           </table>
         </div>
         <picture class="best-product__image">
-          <source srcset="./img/triple-set-desktop@1x.jpg" media="(min-width: 1150px)" width="525" height="636" />
-          <source srcset="./img/triple-set-tablet@1x.jpg" media="(min-width: 768px)" width="333" height="404" />
-          <img class="best-product__image" src="./img/triple-set-mobile@1x.jpg"
+          <source srcset="./img/triple-set-desktop@1x.jpg 1x, ./img/triple-set-desktop@2x.jpg 2x" media="(min-width: 1150px)" width="525" height="636" />
+          <source srcset="./img/triple-set-tablet@1x.jpg 1x, ./img/triple-set-tablet@2x.jpg 2x" media="(min-width: 768px)" width="333" height="404" />
+          <img class="best-product__image" src="./img/triple-set-mobile@1x.jpg" srcset="./img/triple-set-mobile@2x.jpg 2x"
             alt="Вязанные корзинки в нескольких цветах и размерах." width="260" height="315" />
         </picture>
         <div class="best-product__purchase">
           <p class="best-product__price">Цена: 990 руб.</p>
-          <button class="best-product__link open-popup">Сделать заказ</button>
+          <button class="best-product__link js-open-popup">Сделать заказ</button>
         </div>
       </div>
     </section>
@@ -281,9 +286,9 @@
           </div>
         </div>
         <picture>
-          <source srcset="./img/map-desktop@1x.jpg" media="(min-width: 1150px)" />
-          <source srcset="./img/map-tablet@1x.jpg" media="(min-width: 768px)" />
-          <img class="contacts__map" src="./img/map-mobile@1x.jpg" width="322" height="457"
+          <source srcset="./img/map-desktop@1x.jpg 1x, ./img/map-desktop@2x.jpg 2x" media="(min-width: 1150px)" />
+          <source srcset="./img/map-tablet@1x.jpg 1x, ./img/map-tablet@2x.jpg 2x" media="(min-width: 768px)" />
+          <img class="contacts__map" src="./img/map-mobile@1x.jpg" srcset="./img/map-mobile@2x.jpg 2x" width="322" height="457"
             alt="Карта: как нас найти." />
         </picture>
         <a class="contacts__write-to-us" href="#">Напишите нам</a>

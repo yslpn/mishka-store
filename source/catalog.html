@@ -8,6 +8,12 @@
   <link rel="stylesheet" href="./css/style.css">
   <script defer src="./js/app.js"></script>
   <script defer src="./js/popup.js"></script>
+  <script>
+    // Picture element HTML5 shiv
+    document.createElement("picture");
+
+  </script>
+  <script src="https://cdn.rawgit.com/scottjehl/picturefill/3.0.2/dist/picturefill.min.js" async></script>
 </head>
 
 <body>
@@ -76,13 +82,14 @@
       <h1 class="catalog__header">Каталог товаров</h1>
       <div class="container catalog__wrapper">
         <article class="catalog__item product">
-
           <picture>
-            <source srcset="./img/photo-hare-desktop@1x.jpg" media="(min-width: 1150px)" />
-            <source srcset="./img/photo-hare-tablet@1x.jpg" media="(min-width: 768px)" />
-            <img class="product__image" src="./img/photo-hare-mobile@1x.jpg" alt="Кукла зайчик" />
+            <source srcset="./img/photo-hare-desktop@1x.jpg 1x, ./img/photo-hare-desktop@2x.jpg 2x"
+              media="(min-width: 1150px)" width="316px" height="462px" />
+            <source srcset="./img/photo-hare-tablet@1x.jpg 1x, ./img/photo-hare-tablet@2x.jpg 2x"
+              media="(min-width: 768px)" width="334px" height="334px" />
+            <img class="product__image" src="./img/photo-hare-mobile@1x.jpg" srcset="./img/photo-hare-mobile@2x.jpg 2x"
+              alt="Кукла зайчик" width="260px" height="195px" />
           </picture>
-
           <div class="product__info">
             <a class="product__name">Зайчик-попрыгайчик</a>
             <p class="product__params">Рост 30 см, вес 200 г</p>
@@ -100,9 +107,12 @@
         </article>
         <article class="catalog__item product">
           <picture>
-            <source srcset="./img/photo-bowl-desktop@1x.jpg" media="(min-width: 1150px)" />
-            <source srcset="./img/photo-bowl-tablet@1x.jpg" media="(min-width: 768px)" />
-            <img class="product__image" src="./img/photo-bowl-mobile@1x.jpg" alt="Корзина со сложенным бельём" />
+            <source srcset="./img/photo-bowl-desktop@1x.jpg 1x, ./img/photo-bowl-desktop@2x.jpg 2x"
+              media="(min-width: 1150px)" width="316px" height="462px" />
+            <source srcset="./img/photo-bowl-tablet@1x.jpg 1x, ./img/photo-bowl-tablet@2x.jpg 2x"
+              media="(min-width: 768px)" width="334px" height="334px" />
+            <img class="product__image" src="./img/photo-bowl-mobile@1x.jpg" srcset="./img/photo-bowl-mobile@2x.jpg 2x"
+              alt="Корзина со сложенным бельём" width="260px" height="195px" />
           </picture>
           <div class="product__info">
             <a class="product__name">Корзинка для белья</a>
@@ -121,9 +131,12 @@
         </article>
         <article class="catalog__item product">
           <picture>
-            <source srcset="./img/photo-toys-desktop@1x.jpg" media="(min-width: 1150px)" />
-            <source srcset="./img/photo-toys-tablet@1x.jpg" media="(min-width: 768px)" />
-            <img class="product__image" src="./img/photo-toys-mobile@1x.jpg" alt="Корзина с игрушками" />
+            <source srcset="./img/photo-toys-desktop@1x.jpg 1x, ./img/photo-toys-desktop@2x.jpg 2x"
+              media="(min-width: 1150px)" width="316px" height="462px" />
+            <source srcset="./img/photo-toys-tablet@1x.jpg 1x, ./img/photo-toys-tablet@2x.jpg 2x"
+              media="(min-width: 768px)" width="334px" height="334px" />
+            <img class="product__image" src="./img/photo-toys-mobile@1x.jpg" srcset="./img/photo-toys-mobile@2x.jpg 2x"
+              alt="Корзина с игрушками" width="260px" height="195px" />
           </picture>
           <div class="product__info">
             <a class="product__name">Большая корзинка<br>для игрушек</a>
@@ -158,13 +171,16 @@
             <h2 class="production__title">Процесс производства</h2>
           </header>
           <picture class="production__video">
-            <source srcset="./img/video-desktop@1x.jpg" media="(min-width: 1150px)" />
-            <source srcset="./img/video-tablet@1x.jpg" media="(min-width: 768px)" />
-            <img class="production__video-image" src="./img/video-mobile@1x.jpg" alt="Логотип «Мишка»" />
+            <source srcset="./img/video-desktop@1x.jpg 1x, ./img/video-desktop@2x.jpg 2x" media="(min-width: 1150px)"
+              width="682px" height="455px" />
+            <source srcset="./img/video-tablet@1x.jpg 1x, ./img/video-tablet@2x.jpg 2x" media="(min-width: 768px)"
+              width="668px" height="455px" />
+            <img class="production__video-image" src="./img/video-mobile@1x.jpg" srcset="./img/video-mobile@2x.jpg 2x"
+              alt="Логотип «Мишка»" width="260px" height="150px" />
           </picture>
           <p class="production__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о
             том, как появляются наши товары.</p>
-          <button class="production__buy open-popup">Сделать заказ</button>
+          <button class="production__buy js-open-popup">Сделать заказ</button>
         </div>
       </div>
     </section>
