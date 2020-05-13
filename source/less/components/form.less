@@ -263,7 +263,6 @@
   border-color: @green;
 }
 
-
 .form__checkbox-input:checked + .form__checkbox-box {
   background-image: url("data:image/svg+xml,%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='32.666px' height='22.742px' viewBox='0 0 32.666 22.742' enable-background='new 0 0 32.666 22.742' xml:space='preserve'%3E%3Cpolygon points='32.666,1.414 31.252,0 11.338,19.914 1.414,9.989 0,11.403 9.924,21.328 9.924,21.328 11.338,22.742 11.338,22.742 11.339,22.742 12.753,21.328 12.752,21.328 '/%3E%3C/svg%3E%0A");
   background-size: 22px 16px;
@@ -342,6 +341,40 @@
     font-size: 19px;
     line-height: 0.95;
     padding-left: 18px;
+  }
+}
+
+.form__tel-input {
+  background-image: url("../../img/icon-phone.svg");
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+  padding-right: 38px;
+
+  @media @tablet {
+    background-position: right 26px center;
+    padding-right: 56px;
+  }
+
+  @media @desktop {
+    background-position: right 8px center;
+    padding-right: 38px;
+  }
+}
+
+.form__email-input {
+  background-image: url("../../img/icon-mail.svg");
+  background-repeat: no-repeat;
+  background-position: right 4px center;
+  padding-right: 38px;
+
+  @media @tablet {
+    background-position: right 22px center;
+    padding-right: 56px;
+  }
+
+  @media @desktop {
+    background-position: right 4px center;
+    padding-right: 38px;
   }
 }
 

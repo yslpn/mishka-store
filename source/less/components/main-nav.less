@@ -116,15 +116,29 @@
   }
 }
 
-.main-nav__logo-image {
-  width: 86px;
+.main-nav__logo .logo-mobile {
+  @media @tablet {
+    display: none;
+  }
+}
+
+.main-nav__logo .logo-tablet {
+  display: none;
 
   @media @tablet {
+    display: block;
     margin-right: auto;
-    width: 112px;
   }
 
   @media @desktop {
-    width: 149px;
+    display: none;
+  }
+}
+
+.main-nav__logo .logo-desktop {
+  display: none;
+
+  @media @desktop {
+    display: block;
   }
 }
