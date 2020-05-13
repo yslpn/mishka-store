@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Сделать заказ в «Мишка»</title>
-  <meta name="Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказы и мы свяжемся с вами, чтобы уточнить детали.">
+  <meta name="description"
+    content="Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказы и мы свяжемся с вами, чтобы уточнить детали.">
   <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/opensansbold.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="./css/style.min.css">
@@ -173,11 +174,17 @@
           <div class="container form__wrapper">
             <fieldset class="form__item form__item--phone">
               <legend class="form__legend">Тел</legend>
-              <input class="form__tel-input" type="tel" name="telephone" placeholder="+7 XXX XXX XX XX*" required>
+              <label>
+                <span class="visually-hidden">Телефон</span>
+                <input class="form__tel-input" type="tel" name="telephone" placeholder="+7 XXX XXX XX XX*" required>
+              </label>
             </fieldset>
             <fieldset class="form__item form__item--email">
               <legend class="form__legend form__legend--email">E-mail</legend>
-              <input class="form__email-input" type="email" name="e-mail" placeholder="Ваш Email*" required>
+              <label>
+                <span class="visually-hidden">E-mail</span>
+                <input class="form__email-input" type="email" name="e-mail" placeholder="Ваш Email*" required>
+              </label>
             </fieldset>
           </div>
         </div>
@@ -185,8 +192,12 @@
           <div class="container form__wrapper">
             <fieldset class="form__item form__item--extra">
               <legend class="form__legend">Доп</legend>
-              <textarea class="form__textarea-input" form="order" name="extra"
+              <label>
+                <span class="visually-hidden">Дополнительно</span>
+                <textarea class="form__textarea-input" form="order" name="extra"
                 placeholder="Опишите все ваши пожелания к заказу"></textarea>
+              </label>
+
             </fieldset>
           </div>
         </div>
