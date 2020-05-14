@@ -5,8 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Сделать заказ в «Мишка»</title>
+  <meta name="description"
+    content="Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказы и мы свяжемся с вами, чтобы уточнить детали.">
+  <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="./css/style.min.css">
-  <script defer src="./js/app.js"></script>
+  <script defer src="./js/app.min.js"></script>
   <script>
     // Picture element HTML5 shiv
     document.createElement("picture");
@@ -47,6 +51,7 @@
       </ul>
 
       <a href="./index.html" class="main-nav__logo">
+        <span class="visually-hidden">Главная страница</span>
         <svg class="logo-desktop" width="149" height="72">
           <use xlink:href="#logo-desktop"></use>
         </svg>
@@ -169,11 +174,17 @@
           <div class="container form__wrapper">
             <fieldset class="form__item form__item--phone">
               <legend class="form__legend">Тел</legend>
-              <input class="form__tel-input" type="tel" name="telephone" placeholder="+7 XXX XXX XX XX*" required>
+              <label>
+                <span class="visually-hidden">Телефон</span>
+                <input class="form__tel-input" type="tel" name="telephone" placeholder="+7 XXX XXX XX XX*" required>
+              </label>
             </fieldset>
             <fieldset class="form__item form__item--email">
               <legend class="form__legend form__legend--email">E-mail</legend>
-              <input class="form__email-input" type="email" name="e-mail" placeholder="Ваш Email*" required>
+              <label>
+                <span class="visually-hidden">E-mail</span>
+                <input class="form__email-input" type="email" name="e-mail" placeholder="Ваш Email*" required>
+              </label>
             </fieldset>
           </div>
         </div>
@@ -181,8 +192,12 @@
           <div class="container form__wrapper">
             <fieldset class="form__item form__item--extra">
               <legend class="form__legend">Доп</legend>
-              <textarea class="form__textarea-input" form="order" name="extra"
+              <label>
+                <span class="visually-hidden">Дополнительно</span>
+                <textarea class="form__textarea-input" form="order" name="extra"
                 placeholder="Опишите все ваши пожелания к заказу"></textarea>
+              </label>
+
             </fieldset>
           </div>
         </div>
@@ -200,6 +215,7 @@
   <footer class="page-footer">
     <div class="page-footer__wrapper">
       <a class="page-footer__main-link" href="index.html">
+        <span class="visually-hidden">Главная страница</span>
         <svg width="102" height="34">
           <use xlink:href="#logo-footer"></use>
         </svg>
@@ -207,6 +223,7 @@
       <ul class="page-footer__social-list social-list">
         <li class="social-list__item">
           <a class="social-list__link social-list__link--instagram" href="https://www.instagram.com/htmlacademy">
+            <span class="visually-hidden">Инстаграм «HTML Academy»</span>
             <svg width="22" height="21">
               <use xlink:href="#icon-insta"></use>
             </svg>
@@ -214,6 +231,7 @@
         </li>
         <li class="social-list__item">
           <a class="social-list__link social-list__link--facebook" href="https://www.facebook.com/htmlacademy">
+            <span class="visually-hidden">Фейсбук «HTML Academy»</span>
             <svg width="15" height="28">
               <use xlink:href="#icon-fb"></use>
             </svg>
@@ -221,6 +239,7 @@
         </li>
         <li class="social-list__item">
           <a class="social-list__link social-list__link--twitter" href="https://twitter.com/htmlacademy">
+            <span class="visually-hidden">Твиттер «HTML Academy»</span>
             <svg width="23" height="20">
               <use xlink:href="#icon-twitter"></use>
             </svg>
