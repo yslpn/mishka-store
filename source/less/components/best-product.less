@@ -166,6 +166,7 @@
 }
 
 .best-product__image {
+  display: block;
   width: 260px;
   height: 315px;
   margin-left: auto;
@@ -174,6 +175,18 @@
   @media @tablet {
     width: 333px;
     height: 404px;
+  }
+
+  @media @desktop {
+    width: 525px;
+    height: 636px;
+  }
+}
+
+.best-product__image-wrapper {
+  background-color: @placeholder-img-color;
+
+  @media @tablet {
     order: 1;
     margin-top: auto;
     margin-left: auto;
@@ -181,8 +194,6 @@
   }
 
   @media @desktop {
-    width: 525px;
-    height: 636px;
     margin-top: auto;
   }
 }
