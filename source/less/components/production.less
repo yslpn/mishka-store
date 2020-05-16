@@ -102,8 +102,21 @@
   }
 }
 
-.production__video {
+.production__video-wrapper {
   width: 100%;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 101px;
+    height: 77px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url('../../img/icon-play.svg');
+  }
 
   @media @tablet {
     order: -1;
