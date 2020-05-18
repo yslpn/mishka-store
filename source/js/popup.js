@@ -4,7 +4,8 @@ const closeModalBtn = document.querySelector('.popup');
 const modal = document.querySelector('.popup');
 const body = document.querySelector('body');
 
-function openModal() {
+function openModal(event) {
+  event.preventDefault();
   modal.style.display = 'flex';
   body.style.overflow = 'hidden';
 }
