@@ -1,10 +1,11 @@
 // modal
-const openModalBtn = document.querySelector('.js-open-popup');
+const openModalBtn = document.querySelectorAll('.js-open-popup');
 const closeModalBtn = document.querySelector('.popup');
 const modal = document.querySelector('.popup');
 const body = document.querySelector('body');
 
-function openModal() {
+function openModal(event) {
+  event.preventDefault();
   modal.style.display = 'flex';
   body.style.overflow = 'hidden';
 }
@@ -16,5 +17,8 @@ function closeModal(event) {
   }
 }
 
-openModalBtn.addEventListener('click', openModal);
+openModalBtn.forEach(element => {
+  element.addEventListener('click', openModal);
+});
+
 closeModalBtn.addEventListener('click', closeModal);
