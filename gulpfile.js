@@ -18,7 +18,6 @@ var del = require("del");
 var htmlmin = require('gulp-htmlmin');
 var minify = require('gulp-minify');
 
-
 gulp.task('min-js', function() {
   return gulp.src('source/js/*.js')
       .pipe(minify({
@@ -28,8 +27,6 @@ gulp.task('min-js', function() {
       }))
       .pipe(gulp.dest('build/js'))
 });
-
-
 
 gulp.task("images", function () {
   return gulp.src("source/img/**/*.{png,jpg,svg}")
@@ -55,7 +52,6 @@ gulp.task("sprite-icon", function () {
     .pipe(rename("sprite-icon.svg"))
     .pipe(gulp.dest("build/img"));
 });
-
 
 gulp.task("sprite-logo", function () {
   return gulp.src("source/img/logo-*.svg")
