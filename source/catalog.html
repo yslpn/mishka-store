@@ -31,7 +31,7 @@
 
   <header class="page-header">
     <nav class="page-header__nav main-nav main-nav--opened">
-      <button class="main-nav__toggle">
+      <button type="button" class="main-nav__toggle">
         <span class="visually-hidden">Открыть меню</span>
       </button>
 
@@ -219,13 +219,15 @@
               <img class="production__video-image" src="./img/video-mobile@1x.jpg" srcset="./img/video-mobile@2x.jpg 2x"
                 alt="Логотип «Мишка»" width="260" height="150" />
             </picture>
-            <svg class="production__video-play" width="101" height="77">
-              <use xlink:href="#icon-play"></use>
-            </svg>
+            <button type="button" class="production__video-play-button">
+              <svg class="production__video-play-icon" width="101" height="77">
+                <use xlink:href="#icon-play"></use>
+              </svg>
+            </button>
           </div>
           <p class="production__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о
             том, как появляются наши товары.</p>
-          <button class="production__buy js-open-popup">Сделать заказ</button>
+          <button type="button" class="production__buy js-open-popup">Сделать заказ</button>
         </div>
       </div>
     </section>
@@ -255,7 +257,7 @@
               </label>
             </li>
           </ul>
-          <button class="popup__submit" type="submit">Добавить</button>
+          <button type="button" class="popup__submit" type="submit">Добавить</button>
         </form>
       </div>
     </section>
