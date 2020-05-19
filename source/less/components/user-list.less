@@ -75,7 +75,16 @@
 }
 
 .user-list__info {
-  text-decoration: none;
+  @media @tablet {
+    text-decoration: none;
+    display: block;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 1.6;
+    text-align: right;
+    color: @black;
+    margin: 20px auto;
+  }
 }
 
 .user-list__user-item svg {
@@ -105,18 +114,6 @@
     width: 266px;
     margin: 0;
     margin-left: auto;
-  }
-}
-
-.user-list__link--post {
-  @media @tablet {
-    display: block;
-    font-size: 15px;
-    font-weight: normal;
-    line-height: 1.6;
-    text-align: right;
-    color: @black;
-    margin: 20px auto;
   }
 }
 
