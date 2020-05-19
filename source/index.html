@@ -52,15 +52,11 @@
 
       <a href="./index.html" class="main-nav__logo">
         <span class="visually-hidden">Главная страница</span>
-        <svg class="logo-desktop" width="149" height="72">
-          <use xlink:href="#logo-desktop"></use>
-        </svg>
-        <svg class="logo-tablet" width="112" height="46">
-          <use xlink:href="#logo-tablet"></use>
-        </svg>
-        <svg class="logo-mobile" width="86" height="35">
-          <use xlink:href="#logo-mobile"></use>
-        </svg>
+        <picture>
+          <source srcset="./img/logotype-desktop.svg" media="(min-width: 1150px)" />
+          <source srcset="./img/logotype-tablet.svg" media="(min-width: 768px)" />
+          <img class="main-nav__logo-image" src="./img/logotype-mobile.svg" alt="Логотип «Мишка»" width="86" height="35" />
+        </picture>
       </a>
 
       <ul class="main-nav__user-list user-list">
