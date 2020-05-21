@@ -105,7 +105,6 @@
 
   @media @tablet {
     margin: 0;
-    width: 40%;
     position: unset;
     height: 100%;
     order: 2;
@@ -116,29 +115,18 @@
   }
 }
 
-.main-nav__logo .logo-mobile {
-  @media @tablet {
-    display: none;
-  }
-}
-
-.main-nav__logo .logo-tablet {
-  display: none;
+.main-nav__logo-image {
+  margin-right: auto;
+  width: 86px;
+  height: 35px;
 
   @media @tablet {
-    display: block;
-    margin-right: auto;
+    width: 112px;
+    height: 46px;
   }
 
   @media @desktop {
-    display: none;
-  }
-}
-
-.main-nav__logo .logo-desktop {
-  display: none;
-
-  @media @desktop {
-    display: block;
+    width: 149px;
+    height: 72px;
   }
 }

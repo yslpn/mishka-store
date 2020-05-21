@@ -26,12 +26,12 @@
   border: solid 1px @border-popup-color;
   border-right: none;
   border-left: none;
-  padding: 36px 30px 46px 30px;
+  padding: 30px 30px 46px 30px;
 
   @media @tablet {
     border: solid 1px @border-popup-color;
     max-width: 566px;
-    padding: 51px 105px 46px 105px;
+    padding: 30px 105px 46px 105px;
   }
 }
 
@@ -39,7 +39,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
   height: 100%;
 }
 
@@ -53,10 +52,12 @@
   text-align: center;
   text-transform: uppercase;
   margin: 0;
+  margin-bottom: 10px;
 
   @media @tablet {
     font-size: 30px;
     line-height: 1.9;
+    margin-bottom: 15px;
   }
 }
 
@@ -69,6 +70,7 @@
   letter-spacing: normal;
   text-align: center;
   margin: 0;
+  margin-bottom: 20px;
 
   @media @tablet {
     font-size: 17px;
@@ -147,4 +149,5 @@
   text-align: center;
   color: @white;
   cursor: pointer;
+  margin-top: auto;
 }
