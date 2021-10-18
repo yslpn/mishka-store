@@ -7,7 +7,7 @@
 
 #### Link to the GitHub Pages site!
 
-Сайт: https://yslpn.github.io/mishka-site/index.html
+Site: https://yslpn.github.io/mishka-store/index.html
 
 ---
 
